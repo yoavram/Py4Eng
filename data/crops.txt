@@ -397,7 +397,7 @@ Nigella sativa
 Ocimum basilicum
 Ocimum basilicum var. thyrsiflora
 Ocimum tenuiflorum
-Ocimum ª citriodorum
+Ocimum citriodorum
 Oldenlandia umbellata
 Olea europaea
 Onobrychis viciifolia
@@ -616,4 +616,4 @@ Zea mays
 Zingiber officinale
 Zizania spp.
 Ziziphus mauritiana
-Ziziphus zizyphus |
+Ziziphus zizyphus
