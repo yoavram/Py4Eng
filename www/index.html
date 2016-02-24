@@ -6,44 +6,7 @@
   <title>Py4Eng - Python for Engineers</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/yeti/bootstrap.min.css" rel="stylesheet" integrity="sha256-daEYF2SGTkiPl4cmxH06AOMnZ+Hb8wBpvs7DqvceszY= sha512-xmSDqcgDrroCG8Sp/p0IArjjB3lO0m0Yde0tm1mOFD4BwmsvZnVNfHgw7icU6q4ScrTCQKCokxnYMy/hUUfGrg==" crossorigin="anonymous">  
   <link href="css/footer.css" rel="stylesheet" media="screen">  
-  <style type="text/css">
-  body { 
-    padding-top: 70px; /* for navbar-fixed-top */
-  }
-  .logo {    
-    max-width: 100%; 
-    max-height:100%;
-    margin-top: 10px;   
-  }
-  @media only screen and (max-width: 800px){
-    .logo {
-      width: 50%;
-      margin: 0 auto;
-    }
-    .row {
-      margin-left:0;
-      margin-right:0;
-    }
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 100;
-    }
-    body {
-/*      padding-top: 55px;
-*/    }
-  }
-  .p {
-    margin-top: 40px;
-  }
-  .navbar .nav > li > a, .navbar .nav > li > a:first-letter,
-  .navbar .nav > li.current-menu-item > a, 
-  .navbar .nav > li.current-menu-ancestor > a {
-    font-size:      1.2em;
-  }
-  </style>
+  <link href="css/style.css" rel="stylesheet" media="screen">  
 </head>
 
 <body>
@@ -63,69 +26,359 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav" id="menu">
-            <li id="admin"><a href="javascript:change_tab('admin')">Admin</a></li>
-            <li id="sessions"><a href="javascript:change_tab('sessions')">Sessions</a></li>
-            <li id="exercises"><a href="javascript:change_tab('exercises')">Exercises</a></li>                                                
+          <ul class="nav navbar-nav" role="tablist">
+            <li role="presentation" class="active">
+              <a href="#admin" aria-controls="admin" role="tab" data-toggle="tab">Admin</a>
+            </li>
+            <li role="presentation">
+              <a href="#sessions" aria-controls="sessions" role="tab" data-toggle="tab">Sessions</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
+
   <div class="row">
-    <div class="col-md-1 col-md-offset-1">
-      <a href="/" target=""><img src="/img/logo.png" class="img-responsive logo" alt="Py4Eng"></a>
+    <div class="col-md-1 col-md-offset-2 block-center">
+      <a href="#" target=""><img src="img/logo.png" class="img-responsive logo" alt="Py4Eng"></a>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-7">
       <div class="masthead">
         <h2 class="muted">      
           Python for Engineers
         </h2>
         <h4 class="muted">
-           A Programming Course for MATLAB® Users
+           A Programming Course for MATLAB<sup>&reg;</sup> Users
         </h4>
-       </div>
-     </div>
-   </div>
-   <div class="row">
-    <div class="col-md-10 col-md-offset-1" id="content">
-
+      </div>
     </div>
   </div>
 
-  <footer class="colophon"> 
-    <div class="container">
-      <p>
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-          <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
-        </a><br />
-        Course materials and website licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> |
-        <a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> | 
-        <a href="http://bootswatch.com/yeti/" target="_blank">Bootswatch Yeti theme</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache v2.0</a>.
-      </p>
-    </div>
-  </footer>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2 tab-content">
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-  <script type="text/javascript">
-  function change_tab(selection) {
-    $.ajax({
-      url: selection + ".html",
-      dataType: "html",
-      cache: false,
-      success: function(data) {
-        $('#menu').children().removeClass();
-        $('#'+selection).addClass('active');
-        $("#content").fadeOut(function() {
-          $(this).html(data).slideDown();
-        });
+      <!-- admin section -->
+      <div role="tabpanel" class="tab-pane active" id="admin">
+        <table class="table table-hover">
+          <tbody>   
+            <tr>
+              <td width="25%">
+                <i class=" glyphicon glyphicon-map-marker"></i> <strong>Location:</strong>
+              </td>
+              <td width="75%">
+                TBD
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-time"></i> <strong>Date & Time:</strong>
+              </td>
+              <td>
+                <ul class="list-inline">
+                  <li>29.2.2016</li><li>&sdot;</li>
+                  <li>7.3.2016</li><li>&sdot;</li>
+                  <li>14.3.2016</li><li>&sdot;</li>
+                  <li>21.3.2016</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-user"></i> <strong>Teacher:</strong>
+              </td>
+              <td>
+                <a href="http://python.yoavram.com/" target="_blank">Yoav Ram</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-envelope"></i> <strong>Email:</strong>
+              </td>
+              <td>        
+                <a href="mailto:yoav@yoavram.com">yoav@yoavram.com</a> 
+              </td>
+            </tr>       
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-list-alt"></i> <strong>Syllabus:</strong>
+              </td>
+              <td>
+                The course is intended for engineers with MATLAB<sup>&reg;</sup> experience that are
+                interested in extending their knowledge and skills in the Python programming language. 
+                The course will combine an introduction to programming in Python with 
+                a practical overview of the Scientific Python stack.
+              </td>
+            </tr>   
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-cog"></i> <strong>Python libraries:</strong>
+              </td>
+              <td>
+                <ul class="list-inline">
+                  <li><a href="http://ipython.org/" target="_blank">IPython/Jupyter</a></li><li>&sdot;</li>
+                                        <li><a href="http://www.numpy.org/" target='_blank'>NumPy</a></li><li>&sdot;</li>
+                                        <li><a href="http://scipy.org/scipylib/index.html" target='_blank'>SciPy</a></li><li>&sdot;</li>
+                                        <li><a href="http://matplotlib.org/" target='_blank'>Matplotlib</a></li><li>&sdot;</li>
+                                        <li><a href="http://pandas.pydata.org/" target='_blank'>Pandas</a></li><li>&sdot;</li>
+                                        <li><a href="http://stanford.edu/~mwaskom/software/seaborn/" target='_blank'>Seaborn</a></li><li>&sdot;</li>
+                                        <li><a href="http://scikit-learn.org/" target='_blank'>scikit-learn</a></li><li>&sdot;</li>
+                                        <li><a href="http://scikit-image.org/" target='_blank'>scikit-image</a></li><li>&sdot;</li>
+                                        <li><a href="http://sympy.org/" target='_blank'>SymPy</a></li><li>&sdot;</li>
+                                        <li><a href="http://pyside.org" target='_blank'>PySide</a></li><li>&sdot;</li>
+                                        <li><a href="http://flask.pocoo.org" target='_blank'>Flask</a></li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-wrench"></i> <strong>Installing Python:</strong>
+              </td>
+              <td>
+                Install Python 3 by downloading <a href="https://www.continuum.io/downloads" _target="blank">Anaconda</a> 
+                which already includes most the popular scientific and numerical packages.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-book"></i> <strong>Books:</strong>
+              </td>
+              <td>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.greenteapress.com/thinkpython/thinkpython.html" target="_blank">Think Python</a> by Allen B. Downey has basic, short, and clear explanations.
+                  </li>
+                  <li>
+                    <a href="http://www.diveintopython.net/" target="_blank">Dive Into Python</a> by Mark Pilgrim is a free Python book for experienced programmers.
+                  </li>         
+                  <li>
+                    The <a href="http://ipython.rossant.net/" target="_blank">IPython for Interactive Computing and Data Visualization</a> by Cyrille Rossant targets those who already know Python, 
+                    and want to learn IPython for the extended console, the notebook, and more advanced scientific applications. <em>These books are not free</em>. 
+                  </li>
+                  <li>
+                    <a href="http://greenteapress.com/thinkstats2/" target="_blank">Think Stats</a> by Allen B. Downey is an introduction to Probability and Statistics for Python programmers.
+                    <a href="http://greenteapress.com/thinkdsp/" target="_blank">Think DSP</a> by Allen B. Downey is an introduction to Digital Signal Processing in Python.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-facetime-video"></i> <strong>Videos:</strong>
+              </td>
+              <td>
+                <ul class="list-unstyled">
+                  <li>
+                    Detailed <a href="http://www.youtube.com/results?search_query=python+programming+tutorial&aq=f" target="_blank">video lectures</a> by topics - first steps.
+                  </li>
+                  <li>
+                    Google's <a href="http://code.google.com/edu/languages/google-python-class" target="_blank">video lectures</a> - more advanced.
+                  </li>
+                  <li>
+                    Enthought's <a href="https://training.enthought.com/#/courses" target="_blank">online Scientific Python courses</a>.
+                  </li>
+                  <li>
+                    <a href="http://pyvideo.org/" target="_blank">Python related video</a> indexed so you can find it.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-file"></i> <strong>Articles:</strong>
+              </td>
+              <td>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://www.nature.com/news/programming-pick-up-python-1.16833" target="_blank">Programming: Pick up Python</a> by Jeffrey M. Perkel in Nature Toolbox. 2015.
+                  </li>
+                  <li>
+                    <a href="http://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261" target="_blank">Interactive notebooks: Sharing the code</a> by Helen Shen in Nature Toolbox. 2015.
+                  </li>         
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-eye-open"></i> <strong>Courses, Guides &amp; Blogs:</strong>
+              </td>
+              <td>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="http://mathesaurus.sourceforge.net/matlab-numpy.html", target="_blank">NumPy for MATLAB users cheatsheet</a>.
+                  </li>
+                  <li>
+                    <a href="http://docs.python-guide.org/" target="_blank">The Hitchhiker’s Guide to Python</a> - a best practices handbook.
+                  </li>       
+                  <li>
+                    What to do when <a href="http://i.imgur.com/WRuJV6r.png" target="_blank">my code isn't working?</a>.
+                  </li>
+                  <li>
+                    A gallery of <a href="https://github.com/ipython/ipython/wiki/A-gallery-of-interesting-IPython-Notebooks" target="_blank">interesting IPython Notebooks</a>
+                  </li>
+                  <li>
+                    <a href="http://opentechschool.github.io/python-data-intro/" target="_blank">Introduction to Data Processing with Python</a> by OpenTechSchool.
+                  </li>
+                  <li>
+                    <a href="http://software-carpentry.org/v5/novice/python/index.html" target="_blank">Programming with Python</a> by Software Carpentry.
+                  </li>
+                  <li>
+                    <a href="http://introtopython.org/" target="_blank">Introduction to Data Processing with Python</a> by Eric Matthes.
+                  </li>
+                  <li>              
+                    A simple guide for <a href="http://rogerdudler.github.io/git-guide/" target="_blank">getting started with <i>git</i></a>.
+                  </li>
+                  <li>
+                    The <a href="http://blog.yhathq.com/" target="_blank">ŷhat blog</a> - filter on Python topics.
+                  </li>
+                  <li>
+                    <a href="http://www.bigdataexaminer.com/14-best-python-pandas-features/" target="_blank">14 Best Python Pandas Features</a>
+                  </li>
+                  <li>
+                    Allen Downey's blog at <a href="http://www.dsprelated.com/blogs-1/nf/Allen_Downey.php" target="_blank">DSPRELATED.com</a> has many IPython notebook related to digital signal processing.
+                  </li>
+                  <li>
+                    <a href="http://www.scipy-lectures.org/" target="_blank">Scipy Lecture Notes</a> - Tutorials on the scientific Python ecosystem: a quick introduction to central tools and techniques.</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/numerical-mooc/numerical-mooc" target='_blank'>Practical Numerical Methods with Python</a>: a MOOC centered around Jupyter notebooks and focusing on ODE, PDE, and diffusion.
+                  </li>
+                </ul>
+              </td>   
+            </tr>
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-star"></i> <strong>Services:</strong>
+              </td>
+              <td>
+                <ul class="list-unstyled">
+                  <li>
+                    Get a <a href="https://tmpnb.org/">temporary IPython Notebook</a> in the cloud.
+                  </li>
+                  <li>
+                    Turn a GitHub repo into a collection of interactive notebooks with <a href="http://mybinder.org/" target="_blank">binder</a>.
+                  </li>
+                  <li>
+                    <a href="http://pythontutor.com/visualize.html" target="_blank">Python tutor</a>.
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+    </div>
+    <!-- /admin section -->
+
+    <!-- sessions section -->
+    <div role="tabpanel" class="tab-pane" id="sessions">Loading...</div>
+      <script id="sessions-template" type="x-tmpl-mustache">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th width="10%">
+                #
+              </th>     
+              <th width="35%">
+                Topic
+              </th>
+              <th width="15%">
+                Notebook
+              </th>
+              <th width="20%">
+                Last updated
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+          {{#sessions}}
+            <tr>
+              <td>
+                {{index}}
+              </td>     
+              <td>
+                {{sessionname}}
+              </td>
+              <td> 
+                <a target="_blank" href="http://nbviewer.jupyter.org/github/yoavram/Py4Eng/blob/master/sessions/{{filename}}.ipynb">
+                  <i class="glyphicon glyphicon-eye-open"></i>
+                </a>
+                &nbsp;&nbsp;
+                <a target="_blank" href="https://raw.githubusercontent.com/yoavram/Py4Eng/master/sessions/{{filename}}.ipynb" download>
+                  <i class="glyphicon glyphicon-download"></i>
+                </a>
+              </td>
+              <td>
+                <span class="lastUpdated" id="{{filename}}"></span>
+              </td>
+            </tr>
+          {{/sessions}}
+          </tbody>
+        </table>
+      </script>
+    <!-- /sessions section -->
+  </div>
+  <!-- /content div -->
+</div>
+  <!-- /row div -->
+<div class="row">
+  <div class="col-md-10 col-md-offset-1">
+    <footer class="colophon"> 
+        <p>
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+          </a><br />
+          Course materials and website licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> |
+          <a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> | 
+          <a href="http://bootswatch.com/yeti/" target="_blank">Bootswatch Yeti theme</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache v2.0</a>.
+        </p>
+    </footer>
+  </div>
+</div>
+<!-- jQuery.js -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- Bootstrap.js -->
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!-- Moment.js -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<!-- Mustache.js -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+
+<!-- Build sessions table -->
+<script>
+$(function() {
+  $.get('sessions.json', function(sessionsData) {      
+    var data = {
+      sessions: sessionsData, 
+      index: function() {
+        return 1 + (++window['INDEX']||(window['INDEX']=0));
       }
+    } 
+   
+    // render template using the data variable
+    var template = $('#sessions-template').html();
+    Mustache.parse(template);
+    var rendered = Mustache.render(template, data);
+    $('#sessions').html(rendered);
+    
+    // add 'last updated' for each session file
+    $('.lastUpdated').each(function(index, el) {
+     var path = el.id;
+     $.getJSON("https://api.github.com/repos/yoavram/Py4Eng/commits?per_page=1&path=sessions/" + path, function(data) {
+       var date = data[0].commit.author.date;
+       var author = data[0].commit.author.name;
+       date = moment(date, "YYYY-MM-DDTHH:mm:SSZ").fromNow();
+       var message = data[0].commit.message;
+       el.innerHTML = date;
+       el.setAttribute('title', author + ": " + message);
+     });
     });
-  }
-  change_tab("admin");
-  </script>
+  }).fail(function( jqXHR, textStatus ) {
+    //alert( "Request failed: " + textStatus );
+    $('#sessions').html("Error loading sessions data");
+  });
+});
+</script>
 
 </body>
-
 </html>

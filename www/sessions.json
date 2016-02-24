@@ -1,0 +1,107 @@
+[ 
+	{
+		"sessionname": "Types and Operators",
+		"filename": "types-operators.ipynb"
+	},
+	{
+		"sessionname": "If & while",
+		"filename": "if-while.ipynb"
+	},
+	{
+		"sessionname": "Strings, Lists, For loop",
+		"filename": "strings-lists-loops.ipynb"
+	},
+	{
+		"sessionname": "Functions",
+		"filename": "functions.ipynb"
+	},
+	{
+		"sessionname": "Dictionaries",
+		"filename": "dictionaries.ipynb"
+	},
+	{
+		"sessionname": "I/O: input, files, filesystem",
+		"filename": "io.ipynb"
+	},
+
+	{
+		"sessionname": "Pythonic Idioms",
+		"filename": "idioms.ipynb"
+	},
+	{
+		"sessionname": "Object Oriented Programming",
+		"filename": "oop.ipynb"
+	},
+	{
+		"sessionname": "Errors & Exceptions",
+		"filename": "exceptions.ipynb"
+	},
+	{
+		"sessionname": "Modules: import and install",
+		"filename": "modules.ipynb"
+	},
+	{
+		"sessionname": "Jupyter Notebook: Rich display",
+		"filename": "notebook-display.ipynb"
+	},
+	{
+		"sessionname": "Jupyter Notebook: Magic commands",
+		"filename": "notebook-magic.ipynb"
+	},
+	{
+		"sessionname": "Numerical Python: NumPy",
+		"filename": "numpy.ipynb"
+	},
+	{
+		"sessionname": "Plotting with Python: Matplotlib",
+		"filename": "matplotlib.ipynb"
+	},
+	{
+		"sessionname": "Linear algebra",
+		"filename": "linear-algebra.ipynb"
+	},
+	{
+		"sessionname": "Differential equations",
+		"filename": "differential-equations.ipynb"
+	},
+	{
+		"sessionname": "Numerical & symbolic calculus",
+		"filename": "calculus.ipynb"
+	},
+	{
+		"sessionname": "Optimization",
+		"filename": "optimization.ipynb"
+	},
+	{
+		"sessionname": "Data anslysis: Pandas and Seaborn",
+		"filename": "pandas-seaborn.ipynb"
+	},
+	{
+		"sessionname": "Matplotlib aesthetics",
+		"filename": "matplotlib-aesthetics.ipynb"
+	},
+	{
+		"sessionname": "Statistics",
+		"filename": "statistics.ipynb"
+	},
+	{
+		"sessionname": "Data analysis: regression & curve fitting",
+		"filename": "curve-fitting.ipynb"
+	},	
+	{
+		"sessionname": "Machine learning",
+		"filename": "ML.ipynb"
+	},
+	{
+		"sessionname": "Digital signal processing",
+		"filename": "DSP.ipynb"
+	},
+	{
+		"sessionname": "Image processing",
+		"filename": "image-processing.ipynb"
+	},	
+	{
+		"sessionname": "Regular Exceptions",
+		"filename": "regexp.ipynb"
+	}
+]

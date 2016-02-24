@@ -1,0 +1,40 @@
+body { 
+  padding-top: 70px; /* for navbar-fixed-top */
+}
+.logo {
+  min-width: 86px;
+  min-height: 81px;
+  max-width: 100%; 
+  max-height:100%;
+  margin-top: 10px; 
+  vertical-align: middle;
+}
+@media only screen and (max-width: 800px){
+  .row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+}
+@media only screen and (max-width: 1000px){
+  .masthead {
+    text-align: center;
+  }
+  .logo {    
+    margin: 0 auto;
+  }
+}
+.p {
+  margin-top: 40px;
+}
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a {
+  font-size:      1.2em;
+}
