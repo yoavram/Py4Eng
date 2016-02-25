@@ -1,14 +1,14 @@
 [ 
 	{
-		"sessionname": "Types and Operators",
+		"sessionname": "Types and operators",
 		"filename": "types-operators.ipynb"
 	},
 	{
-		"sessionname": "If & while",
+		"sessionname": "If and while",
 		"filename": "if-while.ipynb"
 	},
 	{
-		"sessionname": "Strings, Lists, For loop",
+		"sessionname": "Sequences: strings, lists, for loops",
 		"filename": "strings-lists-loops.ipynb"
 	},
 	{
@@ -24,15 +24,15 @@
 		"filename": "io.ipynb"
 	},
 	{
-		"sessionname": "Pythonic Idioms",
+		"sessionname": "Pythonic idioms",
 		"filename": "idioms.ipynb"
 	},
 	{
-		"sessionname": "Object Oriented Programming",
+		"sessionname": "Object oriented programming",
 		"filename": "oop.ipynb"
 	},
 	{
-		"sessionname": "Errors & Exceptions",
+		"sessionname": "Errors and exceptions",
 		"filename": "exceptions.ipynb"
 	},
 	{
@@ -40,11 +40,11 @@
 		"filename": "modules.ipynb"
 	},
 	{
-		"sessionname": "Jupyter Notebook: Rich display",
+		"sessionname": "Jupyter Notebook: rich display",
 		"filename": "notebook-display.ipynb"
 	},
 	{
-		"sessionname": "Jupyter Notebook: Magic commands",
+		"sessionname": "Jupyter Notebook: magic commands",
 		"filename": "notebook-magic.ipynb"
 	},
 	{
@@ -64,7 +64,7 @@
 		"filename": "differential-equations.ipynb"
 	},
 	{
-		"sessionname": "Numerical & symbolic calculus",
+		"sessionname": "Calculus",
 		"filename": "calculus.ipynb"
 	},
 	{
@@ -84,7 +84,7 @@
 		"filename": "statistics.ipynb"
 	},
 	{
-		"sessionname": "Data analysis: regression & curve fitting",
+		"sessionname": "Data analysis: regression and curve fitting",
 		"filename": "curve-fitting.ipynb"
 	},	
 	{
@@ -100,7 +100,7 @@
 		"filename": "image-processing.ipynb"
 	},	
 	{
-		"sessionname": "Regular Exceptions",
+		"sessionname": "Regular exceptions",
 		"filename": "regexp.ipynb"
 	}
 ]
