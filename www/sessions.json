@@ -22,7 +22,11 @@
 	{
 		"sessionname": "Memory model",
 		"filename": "memory-model.ipynb"
-	},	
+	},
+	{
+		"sessionname": "Modules: import and install",
+		"filename": "modules.ipynb"
+	},
 	{
 		"sessionname": "I/O: input, files, filesystem",
 		"filename": "io.ipynb"
@@ -38,11 +42,7 @@
 	{
 		"sessionname": "Errors and exceptions",
 		"filename": "exceptions.ipynb"
-	},
-	{
-		"sessionname": "Modules: import and install",
-		"filename": "modules.ipynb"
-	},
+	},	
 	{
 		"sessionname": "Jupyter Notebook: rich display",
 		"filename": "notebook-display.ipynb"
