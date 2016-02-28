@@ -12,17 +12,17 @@
 		"filename": "strings-lists-loops.ipynb"
 	},
 	{
+		"sessionname": "Dictionaries",
+		"filename": "dictionaries.ipynb"
+	},
+	{
 		"sessionname": "Functions",
 		"filename": "functions.ipynb"
 	},
 	{
 		"sessionname": "Memory model",
 		"filename": "memory-model.ipynb"
-	},
-	{
-		"sessionname": "Dictionaries",
-		"filename": "dictionaries.ipynb"
-	},
+	},	
 	{
 		"sessionname": "I/O: input, files, filesystem",
 		"filename": "io.ipynb"
