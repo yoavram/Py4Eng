@@ -315,7 +315,15 @@
           {{/sessions}}
           </tbody>
         </table>
-      </script>
+
+      <div class="row">
+        <div class="col-md-1 col-md-offset-9">
+          <a class="btn btn-default" href="javascript:createURL('https://github.com/yoavram/Py4Eng/tree/master/sessions');">
+            <i class="glyphicon glyphicon-download-alt"></i> Download ZIP
+          </a>
+        </div>
+      </div>
+      </script>      
     <!-- /sessions section -->
   </div>
   <!-- /content div -->
@@ -386,6 +394,11 @@ $(function() {
   });
 });
 </script>
+<!-- download-sessions -->
+
+<script src="//raw.githubusercontent.com/kennethgoodman/gitzip/master/js/FileSaver.min.js"></script>
+<script src="//raw.githubusercontent.com/kennethgoodman/gitzip/master/js/jszip.min.js"></script>
+<script src="//raw.githubusercontent.com/kennethgoodman/gitzip/master/js/API.js"></script>
 
 </body>
 </html>
