@@ -42,15 +42,7 @@
 	{
 		"sessionname": "Errors and exceptions",
 		"filename": "exceptions.ipynb"
-	},	
-	{
-		"sessionname": "Jupyter Notebook: rich display",
-		"filename": "notebook-display.ipynb"
-	},
-	{
-		"sessionname": "Jupyter Notebook: magic commands",
-		"filename": "notebook-magic.ipynb"
-	},
+	},		
 	{
 		"sessionname": "Numerical Python: NumPy",
 		"filename": "numpy.ipynb"
@@ -102,9 +94,13 @@
 	{
 		"sessionname": "Image processing",
 		"filename": "image-processing.ipynb"
-	},	
+	},
 	{
-		"sessionname": "Regular expressions",
-		"filename": "regexp.ipynb"
+		"sessionname": "Jupyter Notebook: rich display",
+		"filename": "notebook-display.ipynb"
+	},
+	{
+		"sessionname": "Jupyter Notebook: magic commands",
+		"filename": "notebook-magic.ipynb"
 	}
 ]
