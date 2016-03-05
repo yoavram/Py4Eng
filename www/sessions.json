@@ -32,8 +32,8 @@
 		"filename": "io.ipynb"
 	},
 	{
-		"sessionname": "Pythonic idioms",
-		"filename": "idioms.ipynb"
+		"sessionname": "Iteration: comprehensions, generators, map-reduce",
+		"filename": "iteration.ipynb"
 	},
 	{
 		"sessionname": "Object oriented programming",
@@ -42,6 +42,10 @@
 	{
 		"sessionname": "Errors and exceptions",
 		"filename": "exceptions.ipynb"
+	},
+	{
+		"sessionname": "Pythonic idioms",
+		"filename": "idioms.ipynb"
 	},		
 	{
 		"sessionname": "Numerical Python: NumPy",
