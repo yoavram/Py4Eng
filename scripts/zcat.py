@@ -24,8 +24,3 @@ if __name__ == '__main__':
     filename = sys.argv[1]
     print(zcat(filename))
     sys.exit(0)
-    
-    
-
-
-
