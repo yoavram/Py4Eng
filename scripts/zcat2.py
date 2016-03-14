@@ -6,8 +6,6 @@ Created on Tue Feb  9 12:30:45 2016
 
 @author: yoav@yoavram.com
 """
-import sys
-import os
 import gzip
 import click
 
