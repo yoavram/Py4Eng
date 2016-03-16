@@ -72,26 +72,6 @@
 		"filename": "optimization.ipynb"
 	},
 	{
-		"sessionname": "Data anslysis: Pandas and Seaborn",
-		"filename": "pandas-seaborn.ipynb"
-	},
-	{
-		"sessionname": "Matplotlib aesthetics",
-		"filename": "matplotlib-aesthetics.ipynb"
-	},
-	{
-		"sessionname": "Statistics",
-		"filename": "statistics.ipynb"
-	},
-	{
-		"sessionname": "Data analysis: regression and curve fitting",
-		"filename": "curve-fitting.ipynb"
-	},	
-	{
-		"sessionname": "Machine learning",
-		"filename": "ML.ipynb"
-	},
-	{
 		"sessionname": "Digital signal processing",
 		"filename": "DSP.ipynb"
 	},
@@ -100,11 +80,47 @@
 		"filename": "image-processing.ipynb"
 	},
 	{
+		"sessionname": "Data anslysis: Pandas and Seaborn",
+		"filename": "pandas-seaborn.ipynb"
+	},	
+	{
+		"sessionname": "Statistics",
+		"filename": "statistics.ipynb"
+	},
+	{
+		"sessionname": "Regression and curve fitting",
+		"filename": "curve-fitting.ipynb"
+	},	
+	{
+		"sessionname": "Machine learning",
+		"filename": "ML.ipynb"
+	},	
+	{
+		"sessionname": "Matplotlib aesthetics",
+		"filename": "matplotlib-aesthetics.ipynb"
+	},
+	{
 		"sessionname": "Jupyter Notebook: rich display",
 		"filename": "notebook-display.ipynb"
 	},
 	{
 		"sessionname": "Jupyter Notebook: magic commands",
 		"filename": "notebook-magic.ipynb"
+	},	
+	{
+		"sessionname": "Conda virtual environments",
+		"filename": "conda-env.ipynb"
+	},
+	{
+		"sessionname": "Graphical user interface",
+		"filename": "gui.ipynb"
+	},
+	{
+		"sessionname": "Requests: HTTP for Humans",
+		"filename": "requests.ipynb"
+	},
+	{
+		"sessionname": "Time & Date",
+		"filename": "datetime.ipynb"
 	}
 ]
