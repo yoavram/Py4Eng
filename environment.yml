@@ -23,7 +23,6 @@ dependencies:
 - matplotlib=1.5.1
 - mistune=0.7.1
 - mkl=11.3.1
-- msvc_runtime=1.0.1
 - nbconvert=4.1.0
 - nbformat=4.0.1
 - networkx=1.11
