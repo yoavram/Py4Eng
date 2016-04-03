@@ -37,7 +37,6 @@ dependencies:
 - pygments=2.1.1
 - pyparsing=2.0.3
 - pyqt=4.11.4
-- pyreadline=2.1
 - python=3.5.1
 - python-dateutil=2.4.2
 - pytz=2015.7
