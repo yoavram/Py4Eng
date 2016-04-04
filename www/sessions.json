@@ -116,6 +116,10 @@
 		"filename": "gui.ipynb"
 	},
 	{
+		"sessionname": "Concurrency",
+		"filename": "concurrency.ipynb"
+	},
+	{
 		"sessionname": "Requests: HTTP for Humans",
 		"filename": "requests.ipynb"
 	},
