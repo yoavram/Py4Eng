@@ -62,28 +62,37 @@
       <div role="tabpanel" class="tab-pane active" id="admin">
         <table class="table table-hover">
           <tbody>   
-            <!-- <tr>
+            <tr>
               <td >
                 <i class=" glyphicon glyphicon-map-marker"></i> <strong>Location:</strong>
               </td>
               <td width="75%">
-                TBD
-              </td>
-            </tr> -->
-            <tr>
-              <td width="25%">
-                <i class="glyphicon glyphicon-time"></i> <strong>Date &amp; Time:</strong>
-              </td>
-              <td width="75%">
-                TBD
-                <!-- <ul class="list-inline">
-                  <li>29.2.2016</li><li>&sdot;</li>
-                  <li>7.3.2016</li><li>&sdot;</li>
-                  <li>14.3.2016</li><li>&sdot;</li>
-                  <li>21.3.2016</li>
-                </ul> -->
+                <a href="https://goo.gl/maps/EF1wFe96Hy92" target="_blank">
+                  Orin Shpelter, Yigal Alon 123, Tel-Aviv
+                </a>
               </td>
             </tr>
+            <tr>
+              <td width="25%">
+                <i class="glyphicon glyphicon-calendar"></i> <strong>Dates:</strong>
+              </td>
+              <td width="75%">                
+                <ul class="list-inline">                  
+                  <li>17.4.2016</li><li>&sdot;</li>
+                  <li>8.4.2016</li><li>&sdot;</li>
+                  <li>19.4.2016</li><li>&sdot;</li>
+                  <li>20.4.2016</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td width="25%">
+                <i class="glyphicon glyphicon-time"></i> <strong>Time:</strong>
+              </td>
+              <td width="75%">                
+                9:00-17:30
+              </td>
+            </tr>            
             <tr>
               <td>
                 <i class="glyphicon glyphicon-user"></i> <strong>Teacher:</strong>
@@ -96,10 +105,19 @@
               <td>
                 <i class="glyphicon glyphicon-envelope"></i> <strong>Email:</strong>
               </td>
-              <td>        
+              <td>     
                 <a href="mailto:yoav@yoavram.com">yoav@yoavram.com</a> 
               </td>
-            </tr>       
+            </tr>
+            <tr>
+              <td>
+                <i class="glyphicon glyphicon-globe"></i> <strong>Website:</strong>
+              </td>
+              <td>        
+                <a href="https://python.yoavram.com" target="_blank">python.yoavram.com</a> 
+              </td>
+            </tr>
+            <tr></tr>
             <tr>
               <td>
                 <i class="glyphicon glyphicon-list-alt"></i> <strong>Syllabus:</strong>
@@ -118,16 +136,15 @@
               <td>
                 <ul class="list-inline">
                   <li><a href="http://ipython.org/" target="_blank">IPython/Jupyter</a></li><li>&sdot;</li>
-                                        <li><a href="http://www.numpy.org/" target='_blank'>NumPy</a></li><li>&sdot;</li>
-                                        <li><a href="http://scipy.org/scipylib/index.html" target='_blank'>SciPy</a></li><li>&sdot;</li>
-                                        <li><a href="http://matplotlib.org/" target='_blank'>Matplotlib</a></li><li>&sdot;</li>
-                                        <li><a href="http://pandas.pydata.org/" target='_blank'>Pandas</a></li><li>&sdot;</li>
-                                        <li><a href="http://stanford.edu/~mwaskom/software/seaborn/" target='_blank'>Seaborn</a></li><li>&sdot;</li>
-                                        <li><a href="http://scikit-learn.org/" target='_blank'>scikit-learn</a></li><li>&sdot;</li>
-                                        <li><a href="http://scikit-image.org/" target='_blank'>scikit-image</a></li><li>&sdot;</li>
-                                        <li><a href="http://sympy.org/" target='_blank'>SymPy</a></li><li>&sdot;</li>
-                                        <li><a href="http://pyside.org" target='_blank'>PySide</a></li><li>&sdot;</li>
-                                        <li><a href="http://flask.pocoo.org" target='_blank'>Flask</a></li>
+                  <li><a href="http://www.numpy.org/" target='_blank'>NumPy</a></li><li>&sdot;</li>
+                  <li><a href="http://scipy.org/scipylib/index.html" target='_blank'>SciPy</a></li><li>&sdot;</li>
+                  <li><a href="http://matplotlib.org/" target='_blank'>Matplotlib</a></li><li>&sdot;</li>
+                  <li><a href="http://pandas.pydata.org/" target='_blank'>Pandas</a></li><li>&sdot;</li>
+                  <li><a href="http://stanford.edu/~mwaskom/software/seaborn/" target='_blank'>Seaborn</a></li><li>&sdot;</li>
+                  <li><a href="http://scikit-learn.org/" target='_blank'>scikit-learn</a></li><li>&sdot;</li>
+                  <li><a href="http://scikit-image.org/" target='_blank'>scikit-image</a></li><li>&sdot;</li>
+                  <li><a href="http://sympy.org/" target='_blank'>SymPy</a></li><li>&sdot;</li>
+                  <li><a href="http://pyside.org" target='_blank'>PySide</a></li><li>&sdot;</li>
                 </ul>
               </td>
             </tr>
@@ -277,8 +294,31 @@
     <!-- /admin section -->
 
     <!-- sessions section -->
-    <div role="tabpanel" class="tab-pane" id="sessions">Loading...</div>
+    <div role="tabpanel" class="tab-pane" id="sessions">
+      Loading...
+    </div>
       <script id="sessions-template" type="x-tmpl-mustache">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 block-center">
+            <div class="btn-group">
+              <button class="btn btn-success" title="Open in binder" href="http://mybinder.org/repo/yoavram/Py4Eng" target="_blank">
+                <i class="glyphicon glyphicon-play"></i> <span class="hidden-xs">Open in binder</span>
+              </button>
+              
+              <button class="btn btn-success" title="View on GitHub" href="https://github.com/yoavram/Py4Eng/tree/master/sessions" target="_blank">
+                <i class="glyphicon glyphicon-eye-open"></i> <span class="hidden-xs">View on GitHub</span>
+              </button>
+
+              <button class="btn btn-success" title="View on nbviewer" href="http://nbviewer.jupyter.org/github/yoavram/Py4Eng/tree/master/sessions/" target="_blank">
+                <i class="glyphicon glyphicon-sunglasses"></i> <span class="hidden-xs">View on nbviewer</span>
+              </button>
+
+              <button class="btn btn-success" title="Download ZIP" href="javascript:createURL('https://github.com/yoavram/Py4Eng/tree/master/sessions');" role="button">
+                <i class="glyphicon glyphicon-download-alt"></i> <span class="hidden-xs">Download ZIP</span>
+              </button>
+            </div>
+          </div>
+        </div>
         <table class="table table-hover">
           <thead>
             <tr>
@@ -321,14 +361,7 @@
           {{/sessions}}
           </tbody>
         </table>
-
-      <div class="row">
-        <div class="col-md-1 col-md-offset-9">
-          <a class="btn btn-default" href="javascript:createURL('https://github.com/yoavram/Py4Eng/tree/master/sessions');">
-            <i class="glyphicon glyphicon-download-alt"></i> Download ZIP
-          </a>
-        </div>
-      </div>
+      
       </script>      
     <!-- /sessions section -->
   </div>
