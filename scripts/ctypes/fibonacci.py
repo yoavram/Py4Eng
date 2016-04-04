@@ -6,6 +6,8 @@ Demonstrates the use of ctypes with three functions:
     (1) fib(a)
     (2) fibseries(b)
     (3) fibmatrix(c)
+
+See: https://scipy-cookbook.readthedocs.org/items/Ctypes.html#fibonacci-example-using-numpy-arrays-c-and-scons
 """
 
 import numpy as np
