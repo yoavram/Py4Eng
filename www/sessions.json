@@ -119,6 +119,10 @@
 		"sessionname": "Concurrency",
 		"filename": "concurrency.ipynb"
 	},
+    {
+		"sessionname": "Calling C functions from Python with `ctypes`",
+		"filename": "ctypes.ipynb"
+	},
 	{
 		"sessionname": "Requests: HTTP for Humans",
 		"filename": "requests.ipynb"
