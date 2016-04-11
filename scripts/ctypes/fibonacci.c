@@ -3,9 +3,16 @@
     To be used with fibonacci.py, as an imported library. Use Scons to compile,
     simply type 'scons' in the same directory as this file (see www.scons.org).
 */
-__declspec(dllexport) int fib(int);
-__declspec(dllexport) void fibseries(int *, int, int *);;
-__declspec(dllexport) void fibmatrix(int *, int, int, int *);;
+#if defined(_MSC_VER)
+    #define EXPORT __declspec(dllexport)
+#else
+    //  do nothing and hope for the best?
+    #define EXPORT
+#endif
+
+EXPORT int fib(int);
+EXPORT void fibseries(int *, int, int *);
+EXPORT void fibmatrix(int *, int, int, int *);
 
 /* Function prototypes */
 int fib(int a);

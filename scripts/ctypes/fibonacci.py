@@ -12,26 +12,30 @@ See: https://scipy-cookbook.readthedocs.org/items/Ctypes.html#fibonacci-example-
 """
 import numpy as np
 import ctypes as ct
-
+import sys
+if sys.platform == 'win32':
+    lib_filename = 'fibonacci.dll'
+else:
+    lib_filename = 'libfibonacci.so'
 # Load the library as _libfibonacci.
 # Why the underscore (_) in front of _libfibonacci below?
 # To minimise namespace pollution -- see PEP 8 (www.python.org).
-_libfibonacci = np.ctypeslib.load_library('fibonacci.dll', '.')
+_libfibonacci = np.ctypeslib.load_library(lib_filename, '.')
 
 _libfibonacci.fib.argtypes = [ct.c_int] #  Declare arg type, same below.
 _libfibonacci.fib.restype  =  ct.c_int  #  Declare result type, same below.
 
 _libfibonacci.fibseries.argtypes = [
-    np.ctypeslib.ndpointer(dtype=np.int),
+    np.ctypeslib.ndpointer(dtype=np.intc),
     ct.c_int,
-    np.ctypeslib.ndpointer(dtype=np.int)
+    np.ctypeslib.ndpointer(dtype=np.intc)
 ]
 _libfibonacci.fibseries.restype = ct.c_void_p
 
 _libfibonacci.fibmatrix.argtypes = [
-    np.ctypeslib.ndpointer(dtype=np.int),
+    np.ctypeslib.ndpointer(dtype=np.intc),
     ct.c_int, ct.c_int,
-    np.ctypeslib.ndpointer(dtype=np.int)
+    np.ctypeslib.ndpointer(dtype=np.intc)
 ]
 _libfibonacci.fibmatrix.restype = ct.c_void_p
 
