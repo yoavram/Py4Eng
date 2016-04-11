@@ -124,11 +124,19 @@
 		"filename": "ctypes.ipynb"
 	},
 	{
+		"sessionname": "Cython",
+		"filename": "cython.ipynb"	
+	},
+	{
 		"sessionname": "Requests: HTTP for Humans",
 		"filename": "requests.ipynb"
 	},
 	{
 		"sessionname": "Time & Date",
 		"filename": "datetime.ipynb"
+	},
+	{
+		"sessionname": "Monitoring & scheduling",
+		"filename": "monitoring-scheduling.ipynb"	
 	}
 ]
