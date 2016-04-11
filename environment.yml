@@ -2,14 +2,14 @@ name: Py4Eng
 dependencies:
 - bzip2=1.0.6
 - cycler=0.9.0
-- cython=0.23.4
+- cython=0.24
 - decorator=4.0.9
 - fastcache=1.0.2
 - freetype=2.5.5
 - ipykernel=4.2.2
+- ipyparallel=5.0.1
 - ipython=4.1.1
 - ipython_genutils=0.1.0
-- ipyparallel=5.0.1
 - ipywidgets=4.1.1
 - jinja2=2.8
 - jpeg=8d
@@ -24,6 +24,7 @@ dependencies:
 - matplotlib=1.5.1
 - mistune=0.7.1
 - mkl=11.3.1
+- msvc_runtime=1.0.1
 - nbconvert=4.1.0
 - nbformat=4.0.1
 - networkx=1.11
@@ -49,7 +50,7 @@ dependencies:
 - scikit-learn=0.17.1
 - scipy=0.17.0
 - seaborn=0.7.0
-- setuptools=20.1.1
+- setuptools=20.6.7
 - simplegeneric=0.8.1
 - sip=4.16.9
 - six=1.10.0
@@ -82,3 +83,4 @@ dependencies:
   - toolz==0.7.4
   - tzlocal==1.2.2
   - watchdog==0.8.3
+
