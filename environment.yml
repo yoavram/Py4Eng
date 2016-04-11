@@ -19,6 +19,7 @@ dependencies:
 - jupyter_core=4.0.6
 - libpng=1.6.17
 - libtiff=4.0.6
+- llvmlite=0.10.0
 - markupsafe=0.23
 - matplotlib=1.5.1
 - mistune=0.7.1
@@ -27,6 +28,7 @@ dependencies:
 - nbformat=4.0.1
 - networkx=1.11
 - notebook=4.1.0
+- numba=0.25.0
 - numpy=1.10.4
 - pandas=0.17.1
 - path.py=8.1.2
