@@ -7,7 +7,6 @@ dependencies:
 - fastcache=1.0.2
 - freetype=2.5.5
 - ipykernel=4.2.2
-- ipyparallel=5.0.1
 - ipython=4.1.1
 - ipython_genutils=0.1.0
 - ipywidgets=4.1.1
