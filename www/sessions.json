@@ -96,6 +96,10 @@
 		"filename": "ML.ipynb"
 	},
 	{
+		"sessionname": "TensorFlow",
+		"filename": "tensorflow.ipynb"
+	},
+	{
 		"sessionname": "Matplotlib aesthetics",
 		"filename": "matplotlib-aesthetics.ipynb"
 	},
