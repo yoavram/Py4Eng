@@ -152,18 +152,43 @@
             </tr>
             <tr>
               <td>
-                <i class="glyphicon glyphicon-wrench"></i> <strong>Installing Python:</strong>
+                <i class="glyphicon glyphicon-wrench"></i> <strong>Installation:</strong>
               </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>
-                  Install <strong>Python 3</strong> by downloading <a href="https://www.continuum.io/downloads" _target="blank">Anaconda</a> 
-                  which already includes most the popular scientific and numerical packages.
-                </li>
-                <li>
-                  For the GUI session, install <strong>QT Creator</strong>: download from the <a href="http://www.qt.io/download" target="_blank">Qt website</a>,
-                  use the online installer, choose <em>Custom Install</em>, and un-check everything so that you only install the <em>Qt Creator</em>.
-                </li>
+              <td>                
+                  <dt>Python</dt>
+                  <dl>
+                      Download <a href="https://www.continuum.io/downloads" _target="blank">Anaconda</a> which already includes most the popular scientific and numerical packages.
+                      Check that everything is installed by running <code>python --version</code>, <code>conda update conda</code> and <code>jupyter notebook</code> in the terminal\command line.
+                  </dl>
+                  <dt>For the GUI session</dt>
+                  <dl>
+                    Install <strong>QT Creator</strong>: download from the <a href="http://www.qt.io/download" target="_blank">Qt website</a>,
+                    use the online installer, choose <em>Custom Install</em>, and un-check everything so that you only install the Qt Creator. Check that everything works by running <em>Qt Creator</em> from your programs menu.
+                  </dl>
+                  <dt>For the Cython and ctypes sessions</dt>
+                  <dl>Make sure that you have a C compiler installed                    
+                    <ul>
+                      <li>
+                        Windows:
+                      Refer to <a href="https://github.com/cython/cython/wiki/CythonExtensionsOnWindows" target="_blank">these</a> and <a href="https://github.com/cython/cython/wiki/CythonExtensionsOnWindows" target="_blank">these</a> instructions
+                    </li>
+                    <li>
+                      Linux/OSX:
+                      Check if gcc is installed by running <code>gcc --version</code>, if gcc is not found, install it by:
+                      <ul>
+                        <li>
+                          On Ubuntu/Debian run <code>sudo apt-get install build-essential</code>;
+                        </li>
+                        <li>
+                          On CentOS run <code>sudo yum group install "Development Tools"</code>;
+                        </li>
+                        <li>
+                          On OSX refer to <a href="https://github.com/kennethreitz/osx-gcc-installer" target='_blank'>these instructions</a>.
+                        </li>
+                      </ul>
+                    </li>
+                    </ul>
+                  </dl>                  
               </td>
             </tr>
             <tr>
