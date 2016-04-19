@@ -56,6 +56,14 @@
 		"filename": "matplotlib.ipynb"
 	},
 	{
+		"sessionname": "Digital signal processing",
+		"filename": "DSP.ipynb"
+	},
+	{
+		"sessionname": "Image processing",
+		"filename": "image-processing.ipynb"
+	},
+	{
 		"sessionname": "Linear algebra",
 		"filename": "linear-algebra.ipynb"
 	},
@@ -70,15 +78,7 @@
 	{
 		"sessionname": "Optimization",
 		"filename": "optimization.ipynb"
-	},
-	{
-		"sessionname": "Digital signal processing",
-		"filename": "DSP.ipynb"
-	},
-	{
-		"sessionname": "Image processing",
-		"filename": "image-processing.ipynb"
-	},
+	},	
 	{
 		"sessionname": "Data anslysis: Pandas and Seaborn",
 		"filename": "pandas-seaborn.ipynb"
