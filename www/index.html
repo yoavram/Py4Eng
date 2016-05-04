@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Py4Eng - Python for Engineers</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/simplex/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Ib5WUYOh/fqe9wT9MDBX+VgUWQuUf8oDH3yuR9Kr+6Y5ejq92KR8LEuCbRiGZpG" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha384-OiWEn8WwtH+084y4yW2YhhH6z/qTSecHZuk/eiWtnvLtU+Z8lpDsmhOKkex6YARr" crossorigin="anonymous">
   <link href="css/footer.css" rel="stylesheet" media="screen">  
   <link href="css/style.css" rel="stylesheet" media="screen">  
 </head>
@@ -38,13 +38,13 @@
       </div>
     </nav>
   </div>
-  <div class="row">
+  <!-- <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="alert alert-success" role="alert">
-        Please fill <a href="http://goo.gl/forms/Jv8pLPNUgk" target="_blank">this short survery</a> to provide feedback for the course!
+        Please fill <a href="http://goo.gl/forms/" target="_blank">this short survery</a> to provide feedback for the course!
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="row">
     <div class="col-md-1 col-md-offset-2 block-center">
       <a href="#" target=""><img src="img/logo.png" class="img-responsive logo" alt="Py4Eng"></a>
@@ -73,9 +73,10 @@
                 <i class=" glyphicon glyphicon-map-marker"></i> <strong>Location:</strong>
               </td>
               <td width="75%">
-                <a href="https://goo.gl/maps/EF1wFe96Hy92" target="_blank">
-                  Orin Shpelter, Yigal Alon 123, Tel-Aviv
-                </a>
+                <!-- <a href="https://goo.gl/maps/" target="_blank">
+                  
+                </a> -->
+                TBD
               </td>
             </tr>
             <tr>
@@ -83,12 +84,11 @@
                 <i class="glyphicon glyphicon-calendar"></i> <strong>Dates:</strong>
               </td>
               <td width="75%">                
-                <ul class="list-inline">                  
-                  <li>17.4.2016</li><li>&sdot;</li>
-                  <li>18.4.2016</li><li>&sdot;</li>
-                  <li>19.4.2016</li><li>&sdot;</li>
-                  <li>20.4.2016</li>
-                </ul>
+                <!-- <ul class="list-inline">                  
+                  <li></li><li>&sdot;</li>
+                  
+                </ul> -->
+                TBD
               </td>
             </tr>
             <tr>
@@ -96,12 +96,12 @@
                 <i class="glyphicon glyphicon-time"></i> <strong>Time:</strong>
               </td>
               <td width="75%">                
-                9:00-17:30
+                TBD
               </td>
             </tr>            
             <tr>
               <td>
-                <i class="glyphicon glyphicon-user"></i> <strong>Teacher:</strong>
+                <i class="glyphicon glyphicon-user"></i> <strong>Instructor:</strong>
               </td>
               <td>
                 <a href="http://python.yoavram.com/" target="_blank">Yoav Ram</a>
@@ -172,11 +172,21 @@
                     use the online installer, choose <em>Custom Install</em>, and un-check everything so that you only install the Qt Creator. Check that everything works by running <em>Qt Creator</em> from your programs menu.
                   </dl>
                   <dt>For the Cython and ctypes sessions</dt>
-                  <dl>Make sure that you have a C compiler installed                    
+                  <dl>Make sure that you have a <strong>C compiler</strong> installed:                    
                     <ul>
                       <li>
-                        Windows:
-                      Refer to <a href="https://github.com/cython/cython/wiki/CythonExtensionsOnWindows" target="_blank">these</a> and <a href="https://github.com/cython/cython/wiki/CythonExtensionsOnWindows" target="_blank">these</a> instructions
+                        Windows with Python version lower than 3.5: refer to <a href="https://github.com/cython/cython/wiki/CythonExtensionsOnWindows" target="_blank">these</a> and <a href="https://blog.ionelmc.ro/2014/12/21/compiling-python-extensions-on-windows" target="_blank">these</a> instructions.
+                      </li>
+                      <li>
+                        Windows with  Python 3.5:
+                        <ul>
+                        <li>Install MS <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" target="_blank">Visual Studio 2015</a> 
+                          (the community version in good enough). You can do a custom install and select only <em>C++ Visual Studio</em> and <em>Python Tools</em>.</li>
+                        <li>Add <code>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC</code> 
+                          (or if it doesn't exist, whatever <code>%VCINSTALLDIR%</code> points to) to your <code>PATH</code> environment variable
+                          (or else, you should run <code>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat</code> 
+                          in the command line console before starting the notebook server (<code>jupyter notebook</code>)).</li>                        
+                      </ul>
                     </li>
                     <li>
                       Linux/OSX:
@@ -434,7 +444,7 @@
       <p>        
         Course materials and website licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> |
         <a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> | 
-        <a href="http://bootswatch.com/simplex/" target="_blank">Bootswatch Simplex theme</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache v2.0</a>.
+        <a href="http://bootswatch.com/cosmo/" target="_blank">Bootswatch Cosmo theme</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache v2.0</a>.
 <!--         </br>
         <a class="hidden-xs" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
           <img alt="Creative Commons License" class="license" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
