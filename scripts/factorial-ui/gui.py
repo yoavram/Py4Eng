@@ -5,6 +5,7 @@
 # Copyright (c) 2016, Yoav Ram <yoav@yoavram.com>
 from tkinter import *
 from tkinter import ttk
+import pygubu
 
 
 def factorial(n):
@@ -14,7 +15,6 @@ def factorial(n):
 		return 1
 	else:
 		return n * factorial(n-1)
-import pygubu
 
 
 class FactorialGUI:
