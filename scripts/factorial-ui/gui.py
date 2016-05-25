@@ -44,7 +44,7 @@ class FactorialGUI:
 			n = int(self.input_var.get())
 			self.output_var.set(factorial(n))
 		except ValueError as e:
-			print(e)
+			tkinter.messagebox.showinfo("Error: {}".format(e))
 			pass
 
 

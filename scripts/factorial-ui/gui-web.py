@@ -13,7 +13,7 @@ import tkinter.messagebox
 def factorial(n):
 	r = requests.get('http://127.0.0.1:5000/{:d}'.format(n))
 	if not r.ok:
-		tkinter.messagebox.showinfo("Error: {}".format(r.reason))		
+		tkinter.messagebox.showinfo("Error: {}".format(r.reason))
 	else:
 		return r.json()['result']
 
@@ -45,7 +45,7 @@ class FactorialGUI:
 			n = int(self.input_var.get())
 			self.output_var.set(factorial(n))
 		except ValueError as e:
-			print(e)
+			tkinter.messagebox.showinfo("Error: {}".format(e))
 			pass
 
 
