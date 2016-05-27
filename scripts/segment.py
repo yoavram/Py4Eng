@@ -1,7 +1,6 @@
 import io
 
 import numpy as np
-import requests
 import skimage.filters
 import scipy.misc
 import click
@@ -12,7 +11,7 @@ def open_image(filename, mode="L"):
 def save_image(filename, image):
     scipy.misc.imsave(filename, image)
     
-def segment(image):
+def segment_image(image):
     th = skimage.filters.threshold_otsu(image)
     segmented = np.zeros_like(image)
     segmented[image > th] = 255
@@ -23,7 +22,7 @@ def segment(image):
 @click.argument("dst", type=click.Path(writable=True, dir_okay=False))
 def main(src, dst):
     image = open_image(src)
-    segmented = segment(image)
+    segmented = segment_image(image)
     save_image(dst, segmented)
     
 
