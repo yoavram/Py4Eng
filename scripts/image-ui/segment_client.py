@@ -3,13 +3,13 @@ import io
 import requests
 import click
 
-base_url = "http://127.0.0.1:5000"
+base_url = "http://127.0.0.1:5000/api/1"
 
 def error(msg):
     click.secho(msg, fg="red")
 
 def upload_image(filename):
-    url = "{}/upload".format(base_url)
+    url = "{}/image".format(base_url)
     with open(filename, 'rb') as f:
         resp = requests.post(url, files={'file': f})        
     if not resp.ok:
@@ -27,11 +27,11 @@ def download_image(url, filename=None):
         return io.BytesIO(resp.content)
         
 def segment_image(image_id):
-    url = "{}/segment/{}".format(base_url, image_id)
+    url = "{}/image/{}/segment".format(base_url, image_id)
     resp = requests.get(url)
     if not resp.ok:
         raise Exception(resp.reason)
-    return base_url + resp.json()['url']
+    return resp.json()['url']
 
 @click.command()
 @click.argument("src", type=click.Path(exists=True, readable=True, dir_okay=False))

@@ -9,38 +9,43 @@ from segment import open_image, save_image, segment_image
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'images/'
+app.config['EXTENSION'] = '.jpg'
+
 if os.path.exists(app.config['UPLOAD_FOLDER']):
     shutil.rmtree(app.config['UPLOAD_FOLDER'])
 os.mkdir(app.config['UPLOAD_FOLDER'])
 
-def _image_id():
+def generate_id():
 	return str(uuid.uuid4())
 
-def _image_url(image_id):
-	return url_for('image', image_id=image_id)
+def generate_path(_id):
+	return os.path.join(app.config['UPLOAD_FOLDER'], "{}.{}".format(_id, app.config['EXTENSION']))
 
-def _image_path(image_id):
-	return os.path.join(app.config['UPLOAD_FOLDER'], image_id + '.jpg')
+def generate_url(_id):
+	return url_for('get_image', image_id=_id, _external=True)
+
+@app.route('/api/1/image/<string:image_id>')
+def get_image(image_id):
+	return send_file(generate_path(image_id))
 
 
-@app.route('/upload', methods=['POST'])
-def upload():
+@app.route('/api/1/image', methods=['POST'])
+def post_image():
 	file = request.files['file']
-	image_id = _image_id()
-	file.save(_image_path(image_id))
-	return jsonify(image_id=image_id, url=_image_url(image_id))
+	image_id = generate_id()
+	file.save(generate_path(image_id))
+	return jsonify(image_id=image_id, url=generate_url(image_id))
 
-@app.route('/images/<string:image_id>')
-def image(image_id):
-	return send_file(_image_path(image_id))
 
-@app.route('/segment/<string:image_id>')
+@app.route('/api/1/image/<string:image_id>/segment')
 def segment(image_id):
-	image = open_image(_image_path(image_id))
+	image_path = generate_path(image_id)
+	image = open_image(image_path)
 	segmented = segment_image(image)
-	image_id = _image_id()
-	save_image(_image_path(image_id), segmented)
-	return jsonify(image_id=image_id, url=_image_url(image_id))
+	segmented_image_id = generate_id()
+	segmented_image_path = generate_path(segmented_image_id)
+	save_image(segmented_image_path, segmented)
+	return jsonify(image_id=segmented_image_id, url=generate_url(segmented_image_id))
 
 
 if __name__=='__main__':
