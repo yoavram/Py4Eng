@@ -9,7 +9,6 @@ from flask import Flask, jsonify, send_file, request, url_for, abort, make_respo
 from flask.ext.httpauth import HTTPBasicAuth
 from werkzeug.security import generate_password_hash, check_password_hash
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
-from itsdangerous import SignatureExpired, BadSignature
 
 from segment import open_image, save_image, segment_image
 
@@ -17,9 +16,9 @@ from segment import open_image, save_image, segment_image
 # configuration
 UPLOAD_FOLDER = os.environ.get('UPLOAD_FOLDER', 'images/')
 EXTENSION = os.environ.get('EXTENSION',' .jpg')
-PASSWORD_HASH = os.environ.get('PASSWORD_HASH', 'pbkdf2:sha1:1000$QaeYEdbL$83fd8e594b62385a4a7d28ee1a2bd2f3b98d2dcf')
-TOKEN_EXPIRATION = int(os.environ.get('TOKEN_EXPIRATION', 3600)) # in secs
 SECRET_KEY = os.environ.get('SECRET_KEY', 'kobebryant')
+PASSWORD_HASH = os.environ.get('PASSWORD_HASH', generate_password_hash(SECRET_KEY))
+TOKEN_EXPIRATION = int(os.environ.get('TOKEN_EXPIRATION', 3600)) # in secs
 
 
 # init app
