@@ -1,40 +1,38 @@
-name: Py4Eng
+name: D:\Anaconda3\envs\Py4Eng
 dependencies:
 - bzip2=1.0.6
 - cycler=0.9.0
 - cython=0.24
 - decorator=4.0.9
+- docutils=0.12
+- entrypoints=0.2
 - fastcache=1.0.2
 - freetype=2.5.5
-- ipykernel=4.2.2
-- ipython=4.1.1
+- ipykernel=4.3.1
+- ipython=4.1.2
 - ipython_genutils=0.1.0
 - ipywidgets=4.1.1
 - jinja2=2.8
 - jpeg=8d
 - jsonschema=2.4.0
-- jupyter=1.0.0
-- jupyter_client=4.1.1
-- jupyter_console=4.1.0
-- jupyter_core=4.0.6
+- jupyter_client=4.2.2
+- jupyter_core=4.1.0
 - libpng=1.6.17
 - libtiff=4.0.6
 - llvmlite=0.10.0
 - markupsafe=0.23
-- matplotlib=1.5.1
 - mistune=0.7.1
-- mkl=11.3.1
-- nbconvert=4.1.0
+- mkl=11.3.3
+- nbconvert=4.2.0
 - nbformat=4.0.1
 - networkx=1.11
-- notebook=4.1.0
+- notebook=4.2.0
 - numba=0.25.0
-- numpy=1.10.4
+- numpy=1.11.0
 - pandas=0.17.1
 - path.py=8.1.2
 - pickleshare=0.5
-- pillow=3.1.1
-- pip=8.0.3
+- pip=8.1.1
 - psutil=4.0.0
 - pygments=2.1.1
 - pyparsing=2.0.3
@@ -44,7 +42,6 @@ dependencies:
 - pytz=2015.7
 - pyzmq=15.2.0
 - qt=4.8.7
-- qtconsole=4.1.1
 - requests=2.9.1
 - scikit-image=0.11.3
 - scikit-learn=0.17.1
@@ -57,30 +54,39 @@ dependencies:
 - sympy=0.7.6.1
 - tk=8.5.18
 - tornado=4.3
-- traitlets=4.1.0
+- traitlets=4.2.1
 - wheel=0.29.0
 - zlib=1.2.8
 - pip:
   - aiohttp==0.21.2
+  - appdirs==1.4.0
   - apscheduler==3.0.5
   - argh==0.26.1
   - babel==2.2.0
   - basemap==1.0.8
   - chardet==2.3.0
+  - click==6.6
+  - colorama==0.3.7
   - delorean==0.6.0
+  - flask==0.11
+  - flask-httpauth==3.1.2
   - humanize==0.5.1
   - ipdb==0.8.1
   - ipython-genutils==0.1.0
   - ipython-memory-usage==1.0
-  - jupyter-client==4.1.1
-  - jupyter-console==4.1.0
-  - jupyter-core==4.0.6
+  - itsdangerous==0.24
+  - jupyter-client==4.2.2
+  - jupyter-core==4.1.0
+  - matplotlib==1.5.1
   - memory-profiler==0.41
   - pathtools==0.1.2
+  - pillow==3.2.0
+  - pygubu==0.9.7.8
   - pyyaml==3.11
   - sdeint==0.2.1.dev0
   - sphinx==1.3.1
   - toolz==0.7.4
   - tzlocal==1.2.2
   - watchdog==0.8.3
+  - werkzeug==0.11.10
 
