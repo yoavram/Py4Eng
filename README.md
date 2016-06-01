@@ -4,8 +4,6 @@ A Python programming course for Matlab users.
 
 This is the course website source.
 
-The website is currently hosted by github pages at <http://amat.yoavram.com>.
-
 I'm Yoav Ram I develop and give [Python training](http://python.yoavram.com) in Academia and Industry.
 
 # Setup an Environment
