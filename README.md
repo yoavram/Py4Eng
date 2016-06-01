@@ -28,17 +28,22 @@ If you didn't create a dedicated environment, start with:
 conda update -y -q conda
 ```
 
+and add the [conda-forge](https://conda-forge.github.io/) channel:
+
+```sh
+conda config --add channels conda-forge
+```
+
 Now install the packages:
 
 ```sh
-conda install -y -q requests jupyter notebook ipywidgets numpy scipy matplotlib pandas seaborn scikit-learn scikit-image sympy 
+conda install -y -q requests jupyter notebook ipywidgets numpy scipy matplotlib pandas seaborn scikit-learn scikit-image sympy flask=0.10 click
 conda install -y -q basemap 
 conda update -y -q pip
 pip install sdeint ipdb
 ```
 
 Troubleshoot: 
-- if you get 404 for some package, try installing with `-c anaconda`
 - there is no conda support for Basemap with Python 3 on Windows, so you should download a wheel file from [Gohlke's site](http://www.lfd.uci.edu/~gohlke/pythonlibs/#basemap) and install with `pip install basemap-1.0.8-cp35-none-win_amd64.whl`.
 
 # Start an interactive session
