@@ -5,7 +5,7 @@ import gzip
 import io
 from functools import wraps
 
-from flask import Flask, jsonify, send_file, request, url_for, abort, make_response, after_this_request
+from flask import Flask, jsonify, send_file, request, url_for, abort, after_this_request
 from flask.ext.httpauth import HTTPBasicAuth
 from werkzeug.security import generate_password_hash, check_password_hash
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
@@ -16,8 +16,8 @@ from segment import open_image, save_image, segment_image
 # configuration
 UPLOAD_FOLDER = os.environ.get('UPLOAD_FOLDER', 'images/')
 EXTENSION = os.environ.get('EXTENSION',' .jpg')
-SECRET_KEY = os.environ.get('SECRET_KEY', 'kobebryant')
-PASSWORD_HASH = os.environ.get('PASSWORD_HASH', generate_password_hash(SECRET_KEY))
+SECRET_KEY = os.environ.get('SECRET_KEY', 'lucyintheskywithdiamonds')
+PASSWORD_HASH = os.environ.get('PASSWORD_HASH', 'pbkdf2:sha1:1000$QaeYEdbL$83fd8e594b62385a4a7d28ee1a2bd2f3b98d2dcf')
 TOKEN_EXPIRATION = int(os.environ.get('TOKEN_EXPIRATION', 3600)) # in secs
 
 
@@ -69,19 +69,19 @@ def verify_auth_token(token):
 # error handlers
 @app.errorhandler(404)
 def not_found(error):
-	return make_response(jsonify(error='not found'), 404)
+	return jsonify(error='not found'), 404
 
 @app.errorhandler(400)
 def bad_request(error):
-	return make_response(jsonify(error='bad request'), 400)
+	return jsonify(error='bad request'), 400
 
 @app.errorhandler(405)
 def bad_request(error):
-	return make_response(jsonify(error='method not allowed'), 405)
+	return jsonify(error='method not allowed'), 405
 
 @auth.error_handler
 def unauthorized():
-	return make_response(jsonify(error='unauthorized access'), 403)
+	return jsonify(error='unauthorized access'), 403
 
 # compression: http://flask.pocoo.org/snippets/122/ 
 def gzipped(f):
@@ -164,5 +164,5 @@ def segment(image_id):
 
 
 if __name__=='__main__':
-	app.run(host='127.0.0.1', port=5000, debug=True)
+	app.run(host='127.0.0.1', port=2000, debug=True)
 	app.logger.info("Server shuting down")
