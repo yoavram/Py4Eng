@@ -19,7 +19,7 @@ def generate_id():
 	return str(uuid.uuid4())
 
 def generate_path(_id):
-	return os.path.join(app.config['UPLOAD_FOLDER'], "{}.{}".format(_id, app.config['EXTENSION']))
+	return os.path.join(app.config['UPLOAD_FOLDER'], "{}{}".format(_id, app.config['EXTENSION']))
 
 def generate_url(_id):
 	return url_for('get_image', image_id=_id, _external=True)
