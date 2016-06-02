@@ -4,6 +4,8 @@ A Python programming course for Matlab users.
 
 I'm Yoav Ram I develop and give [Python training](http://python.yoavram.com) for engineers, scientists, and everyone else.
 
+This is the course website source code.
+
 # Setup an Environment
 
 Download Anaconda. The course uses Python 3.5 but will work with Python 3.4, too. 
