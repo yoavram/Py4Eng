@@ -140,6 +140,10 @@
 		"filename": "requests.ipynb"
 	},
 	{
+		"sessionname": "Web server",
+		"filename": "web-server.ipynb"
+	}
+	{
 		"sessionname": "Time & Date",
 		"filename": "datetime.ipynb"
 	},
