@@ -1,19 +1,14 @@
 name: D:\Anaconda3\envs\Py4Eng
-dependencies:
-- backports.shutil_get_terminal_size=1.0.0
+dependencies: 
 - bzip2=1.0.6
-- ca-certificates=2016.2.28
 - cycler=0.10.0
 - cython=0.24
 - decorator=4.0.9
 - docutils=0.12
-- entrypoints=0.2.1
 - fastcache=1.0.2
-- freetype=2.6.3
 - ipykernel=4.3.1
 - ipython=4.2.0
 - ipython_genutils=0.1.0
-- ipywidgets=5.1.5
 - jinja2=2.8
 - jpeg=8d
 - jsonschema=2.5.1
@@ -45,7 +40,6 @@ dependencies:
 - pyqt=4.11.4
 - python=3.5.1
 - python-dateutil=2.5.3
-- python-simplegeneric=0.8.1
 - pytz=2016.4
 - pyzmq=15.2.0
 - qt=4.8.7
@@ -59,11 +53,9 @@ dependencies:
 - sip=4.16.9
 - six=1.10.0
 - sympy=1.0
-- tk=8.5.19
 - tornado=4.3
 - traitlets=4.2.1
 - wheel=0.29.0
-- widgetsnbextension=1.2.3
 - zlib=1.2.8
 - pip:
   - aiohttp==0.21.2
@@ -83,6 +75,7 @@ dependencies:
   - ipdb==0.8.1
   - ipython-genutils==0.1.0
   - ipython-memory-usage==1.0
+  - ipywidgets==5.1.5
   - itsdangerous==0.24
   - jupyter-client==4.2.2
   - jupyter-core==4.1.0
