@@ -12,7 +12,7 @@ class Application:
         self.builder = builder = pygubu.Builder()
 
         #2: Load an ui file
-        builder.add_from_file('hello_pygubu.ui')
+        builder.add_from_file('hello-pygubu.ui')
 
         #3: Create the widget using a master as parent
         self.mainwindow = builder.get_object('mainwindow', master)
