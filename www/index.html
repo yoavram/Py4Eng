@@ -469,7 +469,7 @@
 <!-- Build sessions table -->
 <script>
 $(function() {
-  $.get('sessions.json', function(sessionsData) {      
+  $.getJSON('sessions.json', function(sessionsData) {      
     var data = {
       sessions: sessionsData, 
       index: function() {
