@@ -33,6 +33,9 @@
             <li role="presentation">
               <a href="#sessions" aria-controls="sessions" role="tab" data-toggle="tab">Sessions</a>
             </li>
+            <li role="presentation">
+              <a href="#exercises" aria-controls="exercises" role="tab" data-toggle="tab">Exercises</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -432,6 +435,31 @@
       
       </script>      
     <!-- /sessions section -->
+
+    <!-- exercises section -->
+    <div role="tabpanel" class="tab-pane" id="exercises">
+      Loading...
+    </div>      
+      <script id="exercises-template" type="x-tmpl-mustache">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 block-center">
+            <p>
+              This is a list of recommended exercises. Try to solve at least 5/10.
+            </p>
+          </div>
+        </div>
+        <ol>        
+          {{#exercises}}
+            <li>
+              <a href="{{url}}" target="_blank">
+                {{name}}
+              </a>
+            </li>
+          {{/exercises}}          
+        </ol>      
+      </script>      
+    <!-- /exercises section -->
+
   </div>
   <!-- /content div -->
 </div>
@@ -502,6 +530,28 @@ $(function() {
 });
 </script>
 <!-- download-sessions -->
+
+<!-- download-exercises -->
+<script>
+$(function() {
+  $.getJSON('exercises.json', function(exercisesData) {
+    var data = {
+      exercises: exercisesData
+    }
+
+    // render template using the data variable
+    var template = $('#exercises-template').html();
+    Mustache.parse(template);
+    var rendered = Mustache.render(template, data);
+    $('#exercises').html(rendered);
+
+  }).fail(function( jqXHR, textStatus ) {
+    //alert( "Request failed: " + textStatus );
+    $('#exercises').html("Error loading exercises data");
+  });
+});
+</script>
+<!-- build exercises list -->
 
 <script src="//raw.githubusercontent.com/kennethgoodman/gitzip/master/js/FileSaver.min.js"></script>
 <script src="//raw.githubusercontent.com/kennethgoodman/gitzip/master/js/jszip.min.js"></script>
