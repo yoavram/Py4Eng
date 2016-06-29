@@ -76,7 +76,7 @@ def bad_request(error):
 	return jsonify(error='bad request'), 400
 
 @app.errorhandler(405)
-def bad_request(error):
+def not_allowed(error):
 	return jsonify(error='method not allowed'), 405
 
 @auth.error_handler
