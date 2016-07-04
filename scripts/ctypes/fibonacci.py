@@ -13,9 +13,11 @@ See: https://scipy-cookbook.readthedocs.org/items/Ctypes.html#fibonacci-example-
 import numpy as np
 import ctypes as ct
 import sys
-if sys.platform == 'win32':
+if sys.platform == 'win32': # win
     lib_filename = 'fibonacci.dll'
-else:
+elif sys.platform == 'darwin': # osx
+    lib_filename = 'libfibonacci.dylib'
+else: # linux
     lib_filename = 'libfibonacci.so'
 # Load the library as _libfibonacci.
 # Why the underscore (_) in front of _libfibonacci below?
