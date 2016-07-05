@@ -68,7 +68,7 @@
 		"filename": "linear-algebra.ipynb"
 	},		
 	{
-		"sessionname": "Data anslysis: Pandas and Seaborn",
+		"sessionname": "Data analysis: Pandas and Seaborn",
 		"filename": "pandas-seaborn.ipynb"
 	},
 	{
@@ -140,6 +140,10 @@
 		"filename": "requests.ipynb"
 	},
 	{
+		"sessionname": "Web server",
+		"filename": "web-server.ipynb"
+	},
+	{
 		"sessionname": "Time & Date",
 		"filename": "datetime.ipynb"
 	},
@@ -148,7 +152,7 @@
 		"filename": "regexp.ipynb"
 	},
 	{
-		"sessionname": "CVS file format",
+		"sessionname": "CSV file format",
 		"filename": "csv.ipynb"
 	},
 	{
