@@ -1,25 +1,4 @@
 name: Py4Eng
-channels: !!python/object/new:ruamel_yaml.comments.CommentedSeq
-  listitems:
-  - yoavram
-  - conda-forge
-  - defaults
-  state:
-    _yaml_format: !!python/object:ruamel_yaml.comments.Format
-      _flow_style: false
-    _yaml_line_col: !!python/object:ruamel_yaml.comments.LineCol
-      col: 2
-      data:
-        0:
-        - 1
-        - 4
-        1:
-        - 2
-        - 4
-        2:
-        - 3
-        - 4
-      line: 1
 dependencies:
 - appnope=0.1.0
 - click=6.6
