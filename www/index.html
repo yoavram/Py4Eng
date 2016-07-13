@@ -72,25 +72,21 @@
         <table class="table table-hover">
           <tbody>   
             <tr>
-              <td >
-                <i class=" glyphicon glyphicon-map-marker"></i> <strong>Location:</strong>
+              <td>
+                <i class=" glyphicon glyphicon-calendar"></i> <strong>Dates and Locations:</strong>
+              </td>
+              <td>
+                <ul class="list-unstyled">
+                  <li>
+                  July 20-22, 2016: <a href="http://www.sheratonsanjose.com" target="_blank">Sheraton San Jose Hotel</a>, the Milpitas conference room
+                  </li>
+                  <li>
+                  July 25-26, 2016: KLA-Tencor Campus in Milpitas, the Multi-Purpose rooms
+                  </li>
+                </ul>
               </td>
               <td width="75%">               
-                  TBA                
-              </td>
-            </tr>
-            <tr>
-              <td width="25%">
-                <i class="glyphicon glyphicon-calendar"></i> <strong>Dates:</strong>
-              </td>
-              <td width="75%">                
-                <ul class="list-inline">                  
-                  <li>20 July 2016</li><li>&sdot;</li>
-                  <li>21 June 2016</li><li>&sdot;</li>
-                  <li>22 June 2016</li><li>&sdot;</li>
-                  <li>25 June 2016</li><li>&sdot;</li>
-                  <li>26 June 2016</li>                 
-                </ul>
+                              
               </td>
             </tr>
             <tr>
@@ -98,7 +94,7 @@
                 <i class="glyphicon glyphicon-time"></i> <strong>Time:</strong>
               </td>
               <td width="75%">                
-                TBA
+                9:00 am - 5:00 pm
               </td>
             </tr>            
             <tr>
@@ -171,7 +167,7 @@
                       Download <a href="https://www.continuum.io/downloads" _target="blank">Anaconda</a> which already includes most the popular scientific and numerical packages.
                       Check that everything is installed by running <code>python --version</code>, <code>conda update conda</code> and <code>jupyter notebook</code> in the terminal\command line.
                   </dl>                  
-                  <dt>For the Cython and ctypes sessions (July 25 or 26)</dt>
+                  <dt>For the Cython and ctypes sessions (July 25)</dt>
                   <dl>Make sure that you have a <strong>C compiler</strong> installed:                    
                     <ul>
                       <li>
@@ -180,8 +176,7 @@
                       <li>
                         Windows with Python 3.5:
                         <ul>
-                        <li>Install MS <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" target="_blank">Visual Studio 2015</a> 
-                          (the community version in good enough). You can do a custom install and select only <em>C++ Visual Studio</em> and <em>Python Tools</em>.</li>
+                        <li>Install MS <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" target="_blank">Visual Studio 2015</a> (the community version in good enough). You can do a custom install and select only <em>C++ Visual Studio</em> and <em>Python Tools</em>.</li>
                         <li>Add <code>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC</code> 
                           (or if it doesn't exist, whatever <code>%VCINSTALLDIR%</code> points to) to your <code>PATH</code> environment variable
                           (or else, you should run <code>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat</code> 
@@ -189,7 +184,7 @@
                       </ul>
                     </li>
                     <li>
-                      Linux/OSX:
+                      Linux/Mac:
                       Check if gcc is installed by running <code>gcc --version</code>, if gcc is not found, install it by:
                       <ul>
                         <li>
@@ -199,7 +194,7 @@
                           On CentOS run <code>sudo yum group install "Development Tools"</code>;
                         </li>
                         <li>
-                          On OSX refer to <a href="https://github.com/kennethreitz/osx-gcc-installer" target='_blank'>these instructions</a>.
+                          On Mac refer to <a href="https://github.com/kennethreitz/osx-gcc-installer" target='_blank'>these instructions</a>.
                         </li>
                       </ul>
                     </li>
