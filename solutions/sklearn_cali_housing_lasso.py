@@ -20,8 +20,8 @@ for i,a in enumerate(alphas):
     print(a, lasso.coef_)
     
 lassocv = linear_model.LassoCV()
-lassocv.fit(X, y)
-lassocv_score = lassocv.score(X, y)
+lassocv.fit(X_train, y_train)
+lassocv_score = lassocv.score(X_test, y_test)
 lassocv_alpha = lassocv.alpha_
 print('CV', lassocv.coef_)
 
