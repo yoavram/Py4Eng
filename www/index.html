@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Py4Eng - Python for Engineers</title>
-  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-QqZs0aSOGFan3GWVdP4PyCBp6icaF/4n8Q+wsmZUTiiVIqE4r4tFYcb8Osf+8y45" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-QqZs0aSOGFan3GWVdP4PyCBp6icaF/4n8Q+wsmZUTiiVIqE4r4tFYcb8Osf+8y45" crossorigin="anonymous">
   <link href="css/footer.css" rel="stylesheet" media="screen">  
   <link href="css/style.css" rel="stylesheet" media="screen">  
 </head>
@@ -50,7 +50,7 @@
   </div> -->
   <div class="row">
     <div class="col-md-1 col-md-offset-2 block-center">
-      <a href="#" target=""><img src="img/logo.png" class="img-responsive fliph logo" alt="Py4Eng"></a>
+      <a href="#" target=""><img src="img/logo.png" class="img-responsive fliph logo invert" alt="Py4Eng"></a>
     </div>
     <div class="col-md-7">
       <div class="masthead">
@@ -76,13 +76,8 @@
                 <i class=" glyphicon glyphicon-calendar"></i> <strong>Dates and Locations:</strong>
               </td>
               <td>
-                <ul class="list-unstyled">
-                  <li>
-                  July 20-22, 2016: <a href="http://www.sheratonsanjose.com" target="_blank">Sheraton San Jose Hotel</a>, the Milpitas conference room
-                  </li>
-                  <li>
-                  July 25-26, 2016: KLA-Tencor Campus in Milpitas, the Multi-Purpose rooms
-                  </li>
+                <ul class="list-unstyled">                  
+                  November 8-10 &amp; 14-15, 2016: KLA-Tencor Campus in Milpitas, CA
                 </ul>
               </td>
               <td width="75%">               
@@ -162,12 +157,12 @@
                 <i class="glyphicon glyphicon-wrench"></i> <strong>Installation:</strong>
               </td>
               <td>                
-                  <dt>Python</dt>
+                  <dt>Python 3.5</dt>
                   <dl>
-                      Download <a href="https://www.continuum.io/downloads" _target="blank">Anaconda</a> which already includes most the popular scientific and numerical packages.
+                      Download <a href="https://www.continuum.io/downloads" _target="blank">Anaconda</a> for Python 3.5 which already includes most the popular scientific and numerical packages.
                       Check that everything is installed by running <code>python --version</code>, <code>conda update conda</code> and <code>jupyter notebook</code> in the terminal\command line.
                   </dl>                  
-                  <dt>For the Cython and ctypes sessions (July 25)</dt>
+                  <dt>For the Cython and ctypes sessions (November 14-15)</dt>
                   <dl>Make sure that you have a <strong>C compiler</strong> installed:                    
                     <ul>
                       <li>
@@ -199,7 +194,11 @@
                       </ul>
                     </li>
                     </ul>
-                  </dl>                  
+                  </dl>
+                  <dt>For the TensorFlow sessions (November 14-15)</dt>
+                  <dl>
+                    If you use Windows you will need to use a VM, as TensorFlow doesn't work on Windows.
+                  </dl>
               </td>
             </tr>
             <tr>
@@ -340,7 +339,7 @@
               <td>
                 <ul class="list-unstyled">
                   <li>
-                    Get a <a href="https://tmpnb.org/">temporary IPython Notebook</a> in the cloud.
+                    Get a <a href="https://tmpnb.org/">temporary Jupyter Notebook</a> in the cloud.
                   </li>
                   <li>
                     Turn a GitHub repo into a collection of interactive notebooks with <a href="http://mybinder.org/" target="_blank">binder</a>.
@@ -377,7 +376,10 @@
                 <i class="glyphicon glyphicon-sunglasses"></i> <span class="hidden-xs">View on nbviewer</span>
               </a>
 
-              <a class="btn btn-success" title="Download ZIP" href="https://github.com/yoavram/Py4Eng/archive/master.zip" role="button">
+              <a class="btn btn-success" title="Download GZIP" href="workshop.tar.gz" role="button">
+                <i class="glyphicon glyphicon-download"></i> <span class="hidden-xs">Download GZIP</span>
+              </a>
+              <a class="btn btn-success" title="Download ZIP" href="workshop.zip" role="button">
                 <i class="glyphicon glyphicon-download-alt"></i> <span class="hidden-xs">Download ZIP</span>
               </a>
             </div>
@@ -411,8 +413,7 @@
               </td>
               <td> 
                 <a target="_blank" href="http://nbviewer.jupyter.org/github/yoavram/Py4Eng/blob/master/sessions/{{filename}}">
-                  <i class="glyphicon glyphicon-eye-open"></i>
-                </a>
+                  <i class="glyphicon glyphicon-eye-open"></i></a>
                 &nbsp;&nbsp;
                 <a target="_blank" href="https://raw.githubusercontent.com/yoavram/Py4Eng/master/sessions/{{filename}}" download>
                   <i class="glyphicon glyphicon-download"></i>
@@ -461,14 +462,15 @@
   <div class="col-md-10 col-md-offset-1">
     <footer class="colophon"> 
       <div class="center-block yoavram-logo">
+      <br>
         <a href="http://python.yoavram.com" target="_blank">
-          <img class="img-responsive img-circle fliph" src="img/yr_logo.png" title="Yoav Ram </> Python Training" alt="Yoav Ram </ > Python Training"/>
+          <img class="img-responsive img-circle fliph invert" src="img/yr_logo.png" title="Yoav Ram </> Python Training" alt="Yoav Ram </ > Python Training"/>
         </a>
       </div>
       <p>        
         Course materials and website licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> |
         <a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> | 
-        <a href="http://bootswatch.com/sandstone/" target="_blank">Bootswatch Sandstone theme</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache v2.0</a>.
+        <a href="http://bootswatch.com/superhero/" target="_blank">Bootswatch Superhero theme</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache v2.0</a>.
 <!--         </br>
         <a class="hidden-xs" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
           <img alt="Creative Commons License" class="license" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />

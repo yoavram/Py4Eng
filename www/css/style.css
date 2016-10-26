@@ -63,3 +63,9 @@ p.copyright {
         filter: FlipH;
         -ms-filter: "FlipH";
 }
+
+/* http://stackoverflow.com/a/13325820 */
+.invert {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
