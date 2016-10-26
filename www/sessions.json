@@ -80,8 +80,16 @@
 		"filename": "scikit-learn.ipynb"
 	},
 	{
+		"sessionname": "Deep learning with TensorFlow",
+		"filename": "tensorflow.ipynb"
+	},	
+	{
 		"sessionname": "TensorFlow",
 		"filename": "tensorflow.ipynb"
+	},
+	{
+		"sessionname": "Inference with TensorFlow and Inception",
+		"filename": "inception.ipynb"
 	},
 	{
 		"sessionname": "Concurrency",
