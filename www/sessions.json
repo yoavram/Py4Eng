@@ -76,8 +76,8 @@
 		"filename": "optimization.ipynb"
 	},
 	{
-		"sessionname": "Machine learning",
-		"filename": "ML.ipynb"
+		"sessionname": "Machine learning with scikit-learn",
+		"filename": "scikit-learn.ipynb"
 	},
 	{
 		"sessionname": "TensorFlow",
