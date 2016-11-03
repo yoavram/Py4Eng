@@ -156,14 +156,16 @@
               <td>
                 <i class="glyphicon glyphicon-wrench"></i> <strong>Installation:</strong>
               </td>
-              <td>                
+              <td>   
+                  <em>Please read through the entire section before following the instructions.</em>  
+                  <br><br>
                   <dt>Python 3.5</dt>
                   <dl>
                       Download <a href="https://www.continuum.io/downloads" _target="blank">Anaconda</a> for Python 3.5 which already includes most the popular scientific and numerical packages.
                       Check that everything is installed by running <code>python --version</code>, <code>conda update conda</code> and <code>jupyter notebook</code> in the terminal\command line.
                   </dl>                  
                   <dt>For the Cython and ctypes sessions (November 14-15)</dt>
-                  <dl>Make sure that you have a <strong>C compiler</strong> installed:                    
+                  <dl>Make sure that you have a <strong>C compiler</strong> installed:                 
                     <ul>
                       <li>
                         Windows with Python version lower than 3.5: refer to <a href="https://github.com/cython/cython/wiki/CythonExtensionsOnWindows" target="_blank">these</a> and <a href="https://blog.ionelmc.ro/2014/12/21/compiling-python-extensions-on-windows" target="_blank">these</a> instructions.
@@ -197,7 +199,26 @@
                   </dl>
                   <dt>For the TensorFlow sessions (November 14-15)</dt>
                   <dl>
-                    If you use Windows you will need to use a VM, as TensorFlow doesn't work on Windows.
+                    If you use Windows you will need to use a VM, as TensorFlow doesn't work on Windows (the VM also provides a C compiler for the Cython and ctypes sessions).
+                    <ol>
+                      <li>Download <a href="https://www.virtualbox.org/">VirtualBox</a> and the <a href="https://www.dropbox.com/sh/17d1gif1ppl9uzo/AADVAnz0C8Zh5NZUvwxnbilfa?dl=0">CentOS VM file</a></li>
+                      <li>Install and launch VirtualBox</li>                      
+                      <li>In VirtualBox, choose <code>File &gt; Import Appliance</code> and find the VM file you downloaded</li>
+                      <li>Choose <code>Settings &gt; Network &gt; Adapter 1 &gt; Attach to: NAT</code> to allow the VM to connect to the web</li>
+                      <li>Start the <code>CentOS</code> VM from VirtualBox by clicking it and pressing the green arrow button</li>
+                      <li>Login and Password: <code>osboxes.org</code></li>
+                      <li>In the VM, click <code>Ctrl+F</code> for full screen</li>
+                      <li>Launch <code>Applications &gt; Terminal</code></li>
+                      <li>Type:
+                      <ul>
+                      <li><code>source activate Py4Eng</code></li>
+                      <li><code>cd Py4Eng</code></li>
+                      <li><code>git pull</code></li>
+                      <li><code>jupyter notebook</code></li>
+                      </ul></li>
+                      <li>Jupyter Notebook will launch in the VM browser</li>
+                      <li>Enter the <code>sessions</code> folder and choose a session of your choice</li>
+                      </ol>
                   </dl>
               </td>
             </tr>
