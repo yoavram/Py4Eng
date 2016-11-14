@@ -17,13 +17,15 @@ for i,a in enumerate(alphas):
     lasso.set_params(alpha=a)
     lasso.fit(X_train, y_train)
     scores[i] = lasso.score(X_test, y_test)
-    print(a, lasso.coef_)
+    print(a)
+    print(lasso.coef_)
     
-lassocv = linear_model.LassoCV()
+lassocv = linear_model.LassoCV(alphas=alphas)
 lassocv.fit(X_train, y_train)
 lassocv_score = lassocv.score(X_test, y_test)
 lassocv_alpha = lassocv.alpha_
-print('CV', lassocv.coef_)
+print('CV')
+print(lassocv.coef_)
 
 plt.plot(alphas, scores, '-ko')
 plt.axhline(lassocv_score, color='b', ls='--')
