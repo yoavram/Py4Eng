@@ -7,14 +7,14 @@ dependencies:
 - ipython
 - ipywidgets
 - jupyter
-- matplotlib=1.5
+- matplotlib
 - notebook
 - numba
 - numpy
 - pandas
 - pillow
 - pip
-- python=3.5
+- python=3.6
 - requests
 - scikit-image
 - scikit-learn
