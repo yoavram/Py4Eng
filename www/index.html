@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>Py4Eng - Python for Engineers</title>
-<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-Xqcy5ttufkC3rBa8EdiAyA1VgOGrmel2Y+wxm4K3kI3fcjTWlDWrlnxyD6hOi3PF" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/journal/bootstrap.min.css" rel="stylesheet" integrity="sha384-1L94saFXWAvEw88RkpRz8r28eQMvt7kG9ux3DdCqya/P3CfLNtgqzMnyaUa49Pl2" crossorigin="anonymous">
 <link href="css/footer.css" rel="stylesheet" media="screen">  
   <link href="css/style.css" rel="stylesheet" media="screen">  
 </head>
@@ -50,7 +50,7 @@
   </div> -->
   <div class="row">
     <div class="col-md-1 col-md-offset-2 block-center">
-      <a href="#" target=""><img src="img/logo.png" class="img-responsive fliph logo invert" alt="Py4Eng"></a>
+      <a href="#" target=""><img src="img/logo.png" class="img-responsive fliph logo" alt="Py4Eng"></a>
     </div>
     <div class="col-md-7">
       <div class="masthead">
@@ -73,11 +73,28 @@
           <tbody>   
             <tr>
               <td>
-                <i class=" glyphicon glyphicon-calendar"></i> <strong>Dates and Locations:</strong>
+                <i class=" glyphicon glyphicon-location"></i> <strong>Location:</strong>
               </td>
               <td>
                 <ul class="list-unstyled">                  
-                  November 8-10 &amp; 14-15, 2016: KLA-Tencor Campus in Milpitas, CA
+                  
+                </ul>
+              </td>
+              <td width="75%">               
+                              
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <i class=" glyphicon glyphicon-calendar"></i> <strong>Dates:</strong>
+              </td>
+              <td>
+                <ul class="list-unstyled">                  
+                  <li>Monday, March 6, 2017</li>
+                  <li>Tuesday March 14, 2017</li>
+                  <li>Monday, March 20, 2017</li>
+                  <li>Monday, March 27, 2017</li>
+                  <li>Monday, April 3, 2017</li>
                 </ul>
               </td>
               <td width="75%">               
@@ -89,7 +106,7 @@
                 <i class="glyphicon glyphicon-time"></i> <strong>Time:</strong>
               </td>
               <td width="75%">                
-                9:00 am - 5:00 pm
+                9:00 - 17:00
               </td>
             </tr>            
             <tr>
@@ -113,7 +130,7 @@
                 <i class="glyphicon glyphicon-globe"></i> <strong>Website:</strong>
               </td>
               <td>        
-                <a href="https://ktm.yoavram.com" target="_blank">ktm.yoavram.com</a> 
+                <a href="https://nova.yoavram.com" target="_blank">nova.yoavram.com</a> 
               </td>
             </tr>
             <tr></tr>
@@ -122,15 +139,13 @@
                 <i class="glyphicon glyphicon-list-alt"></i> <strong>Syllabus:</strong>
               </td>
               <td>
-                The course is intended for engineers with MATLAB<sup>&reg;</sup> experience that are
-                interested in extending their knowledge and skills in the Python programming language. 
-                The course will combine an introduction to programming in Python with 
-                a practical overview of the Scientific Python stack.
+                The course is intended for engineers with MATLAB<sup>&reg;</sup> experience that are interested in extending their knowledge and skills in the Python programming language. 
+                The course will combine an introduction to programming in Python with a practical overview of the Scientific Python stack.
               </td>
             </tr>   
             <tr>
               <td>
-                <i class="glyphicon glyphicon-briefcase"></i> <strong>Python s:</strong>
+                <i class="glyphicon glyphicon-briefcase"></i> <strong>Python packages:</strong>
               </td>
               <td>
                 <ul class="list-inline">
@@ -159,21 +174,21 @@
               <td>   
                   <em>Please read through the entire section before following the instructions.</em>  
                   <br><br>
-                  <dt>Python 3.5</dt>
+                  <dt>Python 3.6</dt>
                   <dl>
-                      Download <a href="https://www.continuum.io/downloads" _target="blank">Anaconda</a> for Python 3.5 which already includes most the popular scientific and numerical packages.
+                      Download <a href="https://www.continuum.io/downloads" _target="blank">Anaconda</a> for Python 3.6 which already includes most the popular scientific and numerical packages.
                       Check that everything is installed by running <code>python --version</code>, <code>conda update conda</code> and <code>jupyter notebook</code> in the terminal\command line.
                   </dl>                  
-                  <dt>For the Cython and ctypes sessions (November 14-15)</dt>
+                  <dt>For the Cython and ctypes sessions (March 27, April 3)</dt>
                   <dl>Make sure that you have a <strong>C compiler</strong> installed:                 
                     <ul>
                       <li>
                         Windows with Python version lower than 3.5: refer to <a href="https://github.com/cython/cython/wiki/CythonExtensionsOnWindows" target="_blank">these</a> and <a href="https://blog.ionelmc.ro/2014/12/21/compiling-python-extensions-on-windows" target="_blank">these</a> instructions.
                       </li>
                       <li>
-                        Windows with Python 3.5:
+                        Windows with Python 3.5/3.6:
                         <ul>
-                        <li>Install MS <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" target="_blank">Visual Studio 2015</a> (the community version in good enough). You can do a custom install and select only <em>C++ Visual Studio</em> and <em>Python Tools</em>.</li>
+                        <li>Install MS <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" target="_blank">Visual Studio 2015/2017</a> (the community version in good enough). You can do a custom install and select only <em>C++ Visual Studio</em> and <em>Python Tools</em>.</li>
                         <li>Add <code>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC</code> 
                           (or if it doesn't exist, whatever <code>%VCINSTALLDIR%</code> points to) to your <code>PATH</code> environment variable
                           (or else, you should run <code>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat</code> 
@@ -197,28 +212,9 @@
                     </li>
                     </ul>
                   </dl>
-                  <dt>For the TensorFlow sessions (November 14-15)</dt>
+                  <dt>For the TensorFlow sessions (April 3)</dt>
                   <dl>
-                    If you use Windows you will need to use a VM, as TensorFlow doesn't work on Windows (the VM also provides a C compiler for the Cython and ctypes sessions).
-                    <ol>
-                      <li>Download <a href="https://www.virtualbox.org/">VirtualBox</a> and the <a href="https://www.dropbox.com/sh/17d1gif1ppl9uzo/AADVAnz0C8Zh5NZUvwxnbilfa?dl=0">CentOS VM file</a></li>
-                      <li>Install and launch VirtualBox</li>                      
-                      <li>In VirtualBox, choose <code>File &gt; Import Appliance</code> and find the VM file you downloaded</li>
-                      <li>Choose <code>Settings &gt; Network &gt; Adapter 1 &gt; Attach to: NAT</code> to allow the VM to connect to the web</li>
-                      <li>Start the <code>CentOS</code> VM from VirtualBox by clicking it and pressing the green arrow button</li>
-                      <li>Login and Password: <code>osboxes.org</code></li>
-                      <li>In the VM, click <code>Ctrl+F</code> for full screen</li>
-                      <li>Launch <code>Applications &gt; Terminal</code></li>
-                      <li>Type:
-                      <ul>
-                      <li><code>source activate Py4Eng</code></li>
-                      <li><code>cd Py4Eng</code></li>
-                      <li><code>git pull</code></li>
-                      <li><code>jupyter notebook</code></li>
-                      </ul></li>
-                      <li>Jupyter Notebook will launch in the VM browser</li>
-                      <li>Enter the <code>sessions</code> folder and choose a session of your choice</li>
-                      </ol>
+                    If you use Windows you will need to run the following command: <code>(tensorflow)C:> pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/windows/cpu/tensorflow-1.0.0-cp35-cp35m-win_x86_64.whl </code>. For troubleshooting and some more details, see <a href="https://www.tensorflow.org/install/install_windows" target="_blank">Official Installation Instructions for Windows</a>.                    
                   </dl>
               </td>
             </tr>
@@ -491,7 +487,7 @@
       <p>        
         Course materials and website licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> |
         <a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> | 
-        <a href="http://bootswatch.com/superhero/" target="_blank">Bootswatch Superhero theme</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache v2.0</a>.
+        <a href="http://bootswatch.com/journal/" target="_blank">Bootswatch Journal theme</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache v2.0</a>.
 <!--         </br>
         <a class="hidden-xs" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
           <img alt="Creative Commons License" class="license" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
