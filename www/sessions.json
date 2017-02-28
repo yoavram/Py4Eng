@@ -96,7 +96,7 @@
 		"filename": "concurrency.ipynb"
 	},
     {
-		"sessionname": "Calling C functions from Python with `ctypes`",
+		"sessionname": "Calling C functions from Python",
 		"filename": "ctypes.ipynb"
 	},
 	{
