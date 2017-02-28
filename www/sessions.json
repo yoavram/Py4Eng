@@ -104,6 +104,14 @@
 		"filename": "cython.ipynb"	
 	},
 	{
+		"sessionname": "Using MATLAB from Python",
+		"filename": "matlab.ipynb"
+	},
+	{
+		"sessionname": "Using .NET from Python",
+		"filename": "dotNET.ipynb"
+	},
+	{
 		"sessionname": "Graphical user interface",
 		"filename": "gui.ipynb"
 	},
