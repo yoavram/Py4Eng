@@ -20,6 +20,10 @@
 		"filename": "functions.ipynb"
 	},
 	{
+		"sessionname": "Errors and exceptions",
+		"filename": "exceptions.ipynb"
+	},
+	{
 		"sessionname": "Memory model",
 		"filename": "memory-model.ipynb"
 	},
@@ -38,11 +42,7 @@
 	{
 		"sessionname": "Object oriented programming",
 		"filename": "oop.ipynb"
-	},
-	{
-		"sessionname": "Errors and exceptions",
-		"filename": "exceptions.ipynb"
-	},
+	},	
 	{
 		"sessionname": "Pythonic idioms",
 		"filename": "idioms.ipynb"
