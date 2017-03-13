@@ -42,10 +42,14 @@
 	{
 		"sessionname": "Object oriented programming",
 		"filename": "oop.ipynb"
-	},	
+	},
 	{
 		"sessionname": "Pythonic idioms",
 		"filename": "idioms.ipynb"
+	},
+	{
+		"sessionname": "Conda virtual environments",
+		"filename": "conda-env.ipynb"
 	},		
 	{
 		"sessionname": "Numerical Python: NumPy",
@@ -110,11 +114,7 @@
 	{
 		"sessionname": "Using .NET from Python",
 		"filename": "dotNET.ipynb"
-	},
-	{
-		"sessionname": "Graphical user interface",
-		"filename": "gui.ipynb"
-	},
+	},	
 	{
 		"sessionname": "Differential equations",
 		"filename": "differential-equations.ipynb"
@@ -146,14 +146,14 @@
 	{
 		"sessionname": "Jupyter Notebook: magic commands",
 		"filename": "notebook-magic.ipynb"
-	},	
-	{
-		"sessionname": "Conda virtual environments",
-		"filename": "conda-env.ipynb"
 	},
 	{
 		"sessionname": "Requests: HTTP for Humans",
 		"filename": "requests.ipynb"
+	},
+	{
+		"sessionname": "Graphical user interface",
+		"filename": "gui.ipynb"
 	},
 	{
 		"sessionname": "Web server",
