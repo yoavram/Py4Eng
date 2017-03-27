@@ -79,23 +79,7 @@
 		"sessionname": "Optimization",
 		"filename": "optimization.ipynb"
 	},
-	{
-		"sessionname": "Machine learning with scikit-learn",
-		"filename": "scikit-learn.ipynb"
-	},
-	{
-		"sessionname": "Deep learning with TensorFlow",
-		"filename": "tensorflow.ipynb"
-	},	
-	{
-		"sessionname": "TensorFlow",
-		"filename": "tensorflow.ipynb"
-	},
-	{
-		"sessionname": "Inference with TensorFlow and Inception",
-		"filename": "inception.ipynb"
-	},
-	{
+		{
 		"sessionname": "Concurrency",
 		"filename": "concurrency.ipynb"
 	},
@@ -115,6 +99,18 @@
 		"sessionname": "Using .NET from Python",
 		"filename": "dotNET.ipynb"
 	},	
+	{
+		"sessionname": "Machine learning with scikit-learn",
+		"filename": "scikit-learn.ipynb"
+	},
+	{
+		"sessionname": "Deep learning with TensorFlow",
+		"filename": "tensorflow.ipynb"
+	},	
+	{
+		"sessionname": "Inference with TensorFlow and Inception",
+		"filename": "inception.ipynb"
+	},
 	{
 		"sessionname": "Differential equations",
 		"filename": "differential-equations.ipynb"
