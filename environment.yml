@@ -24,4 +24,4 @@ dependencies:
 - pip:
   - ipdb
   - pygubu
-  - sdeint
+  - sdeint>=0.2.1
