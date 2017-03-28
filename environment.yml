@@ -14,7 +14,7 @@ dependencies:
 - pandas
 - pillow
 - pip
-- python=3.6
+- python
 - requests
 - scikit-image
 - scikit-learn
