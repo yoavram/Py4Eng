@@ -42,11 +42,7 @@
 	{
 		"sessionname": "Object oriented programming",
 		"filename": "oop.ipynb"
-	},
-	{
-		"sessionname": "Pythonic idioms",
-		"filename": "idioms.ipynb"
-	},
+	},	
 	{
 		"sessionname": "Conda virtual environments",
 		"filename": "conda-env.ipynb"
@@ -98,7 +94,15 @@
 	{
 		"sessionname": "Using .NET from Python",
 		"filename": "dotNET.ipynb"
-	},	
+	},
+	{
+		"sessionname": "Calculus",
+		"filename": "calculus.ipynb"
+	},			
+	{
+		"sessionname": "Differential equations",
+		"filename": "differential-equations.ipynb"
+	},
 	{
 		"sessionname": "Machine learning with scikit-learn",
 		"filename": "scikit-learn.ipynb"
@@ -111,14 +115,6 @@
 		"sessionname": "Inference with TensorFlow and Inception",
 		"filename": "inception.ipynb"
 	},
-	{
-		"sessionname": "Differential equations",
-		"filename": "differential-equations.ipynb"
-	},
-	{
-		"sessionname": "Calculus",
-		"filename": "calculus.ipynb"
-	},	
 	{
 		"sessionname": "Statistics",
 		"filename": "statistics.ipynb"
@@ -134,6 +130,10 @@
 	{
 		"sessionname": "Matplotlib aesthetics",
 		"filename": "matplotlib-aesthetics.ipynb"
+	},
+	{
+		"sessionname": "Pythonic idioms",
+		"filename": "idioms.ipynb"
 	},
 	{
 		"sessionname": "Jupyter Notebook: rich display",
