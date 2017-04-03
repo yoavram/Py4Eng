@@ -182,25 +182,27 @@
                       Download <a href="https://www.continuum.io/downloads" _target="blank">Anaconda</a> for Python 3.6 which already includes most the popular scientific and numerical packages.
                       Check that everything is installed by running <code>python --version</code>, <code>conda update conda</code> and <code>jupyter notebook</code> in the terminal\command line.
                   </dl>                  
-                  <dt>For the Cython and ctypes sessions (March 27, April 3)</dt>
+                  <dt>For the Cython and ctypes session</dt>
                   <dl>Make sure that you have a <strong>C compiler</strong> installed:                 
                     <ul>
                       <li>
                         Windows with Python version lower than 3.5: refer to <a href="https://github.com/cython/cython/wiki/CythonExtensionsOnWindows" target="_blank">these</a> and <a href="https://blog.ionelmc.ro/2014/12/21/compiling-python-extensions-on-windows" target="_blank">these</a> instructions.
                       </li>
                       <li>
-                        Windows with Python 3.5/3.6:
+                        Windows with Python 3.5/3.6 (<em>Note</em>: the following installations require >3GB of disk space)
                         <ul>
-                        <li>Install MS <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" target="_blank">Visual Studio 2015/2017</a> (the community version in good enough). You can do a custom install and select only <em>C++ Visual Studio</em> and <em>Python Tools</em>.</li>
-                        <li>Add <code>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC</code> 
+                          <li>Install MS <a href="https://www.visualstudio.com/downloads/download-visual-studio-vs" target="_blank">Visual Studio 2015/2017</a> (the community version in good enough). You can do a custom install and select only <em>C++ Visual Studio</em> and <em>Python Tools</em>.</li>
+                          <li>Add <code>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC</code> 
                           (or if it doesn't exist, whatever <code>%VCINSTALLDIR%</code> points to) to your <code>PATH</code> environment variable
                           (or else, you should run <code>C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat</code> 
-                          in the command line console before starting the notebook server (<code>jupyter notebook</code>)).</li>                        
-                      </ul>
+                          in the command line console before starting the notebook server (<code>jupyter notebook</code>)).</li>  
+                          <li>If you already have another version of Visual Studio, you can install <a href="http://landinghub.visualstudio.com/visual-cpp-build-tools" target="_blank">Visual C++ 2015 Build tools</a>.
+                          </li>                      
+                        </ul>
                     </li>
                     <li>
                       Linux/Mac:
-                      Check if gcc is installed by running <code>gcc --version</code>, if gcc is not found, install it by:
+                      Check if gcc is installed by running <code>gcc --version</code>, if gcc is not found, install it:
                       <ul>
                         <li>
                           On Ubuntu/Debian run <code>sudo apt-get install build-essential</code>;
