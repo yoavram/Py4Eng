@@ -1,10 +1,11 @@
 name: Py4Eng
 dependencies:
+- cartopy
 - click
 - cython
-- flask=0.10
+- flask
+- ipdb
 - ipykernel
-- ipython
 - ipywidgets
 - jupyter
 - matplotlib
@@ -12,16 +13,16 @@ dependencies:
 - numba
 - numpy
 - pandas
-- pillow
 - pip
-- python
+- python=3.6
 - requests
 - scikit-image
 - scikit-learn
 - scipy
 - seaborn
 - sympy
+- statsmodels
+- tensorflow
 - pip:
-  - ipdb
   - pygubu
-  - sdeint>=0.2.1
+  - sdeint
