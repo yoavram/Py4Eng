@@ -2,10 +2,11 @@ import os
 import concurrent.futures
 
 def pid():
-    return os.getpid(), os.getppid()
+    return os.getppid(), os.getpid()
 
 if __name__ == '__main__':
-    print("Main:\n{1}->{0}".format(*pid()))
+	parent, this = pid()
+    print("Main:\n{}->{}".format(parent, this))
     print("Siblings:")
     with concurrent.futures.ProcessPoolExecutor() as executor:
         futures = [executor.submit(pid) for _ in range(10)]
@@ -13,4 +14,5 @@ if __name__ == '__main__':
             if future.exception():
                 print(future.exception())
             else:
-                print('{1}->{0}'.format(*future.result()))
+            	parent, this = future.result()
+                print('{1}->{0}'.format(parent, this))
