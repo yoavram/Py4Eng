@@ -6,8 +6,8 @@ import pygubu
 
 
 class Application:
-    def __init__(self, master):
-        self.master = master
+    def __init__(self):
+        self.master = master = tk.Tk()
         #1: Create a builder
         self.builder = builder = pygubu.Builder()
 
@@ -25,6 +25,5 @@ class Application:
         self.lbl['text'] = "Clicked"
 
 if __name__ == '__main__':
-    app = tk.Tk()
-    window = Application(app)
-    app.mainloop()
+    app = Application()
+    app.master.mainloop()

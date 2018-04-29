@@ -3,25 +3,25 @@ https://docs.python.org/3/library/tkinter.html
 """
 import tkinter as tk
 
-class Application(tk.Frame):
-    def __init__(self, master=None):
-        tk.Frame.__init__(self, master)
-        self.pack()
+class Application:
+    def __init__(self):
+        self.root = tk.Tk()
+        self.frame = tk.Frame(self.root)
+        self.frame.pack()
         self.createWidgets()
 
     def createWidgets(self):
-        self.hi_there = tk.Button(self)
+        self.hi_there = tk.Button(self.frame)
         self.hi_there["text"] = "Hello World\n(click me)"
         self.hi_there["command"] = self.say_hi
         self.hi_there.pack(side="top")
 
-        self.QUIT = tk.Button(self, text="QUIT", fg="red",
-                              command=root.destroy)
-        self.QUIT.pack(side="bottom")
+        self.quit = tk.Button(self.frame, text="Quit", fg="red",
+                              command=self.root.destroy)
+        self.quit.pack(side="bottom")
 
     def say_hi(self):
         print("hi there, everyone!")
 
-root = tk.Tk()
-app = Application(master=root)
-app.mainloop()
+app = Application()
+app.root.mainloop()
