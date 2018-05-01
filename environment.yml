@@ -1,80 +1,28 @@
 name: Py4Eng
 dependencies:
-- bzip2=1.0.6=vc14_2
-- cycler=0.9.0=py35_0
-- decorator=4.0.9=py35_0
-- fastcache=1.0.2=py35_0
-- freetype=2.5.5=vc14_0
-- ipykernel=4.2.2=py35_0
-- ipython=4.1.1=py35_0
-- ipython_genutils=0.1.0=py35_0
-- ipywidgets=4.1.1=py35_0
-- jinja2=2.8=py35_0
-- jpeg=8d=vc14_0
-- jsonschema=2.4.0=py35_0
-- jupyter=1.0.0=py35_1
-- jupyter_client=4.1.1=py35_0
-- jupyter_console=4.1.0=py35_0
-- jupyter_core=4.0.6=py35_0
-- libpng=1.6.17=vc14_1
-- libtiff=4.0.6=vc14_1
-- markupsafe=0.23=py35_0
-- matplotlib=1.5.1=np110py35_0
-- mistune=0.7.1=py35_0
-- mkl=11.3.1=0
-- msvc_runtime=1.0.1=vc14_0
-- nbconvert=4.1.0=py35_0
-- nbformat=4.0.1=py35_0
-- networkx=1.11=py35_0
-- notebook=4.1.0=py35_0
-- numpy=1.10.4=py35_0
-- pandas=0.17.1=np110py35_0
-- path.py=8.1.2=py35_1
-- pickleshare=0.5=py35_0
-- pillow=3.1.1=py35_0
-- pip=8.0.3=py35_0
-- psutil=4.0.0=py35_0
-- pygments=2.1.1=py35_0
-- pyparsing=2.0.3=py35_0
-- pyqt=4.11.4=py35_5
-- pyreadline=2.1=py35_0
-- python=3.5.1=2
-- python-dateutil=2.4.2=py35_0
-- pytz=2015.7=py35_0
-- pyzmq=15.2.0=py35_0
-- qt=4.8.7=vc14_6
-- qtconsole=4.1.1=py35_0
-- requests=2.9.1=py35_0
-- scikit-image=0.11.3=np110py35_0
-- scikit-learn=0.17.1=np110py35_0
-- scipy=0.17.0=np110py35_0
-- seaborn=0.7.0=py35_0
-- setuptools=20.1.1=py35_0
-- simplegeneric=0.8.1=py35_0
-- sip=4.16.9=py35_2
-- six=1.10.0=py35_0
-- sympy=0.7.6.1=py35_0
-- tk=8.5.18=vc14_0
-- tornado=4.3=py35_0
-- traitlets=4.1.0=py35_0
-- wheel=0.29.0=py35_0
-- zlib=1.2.8=vc14_2
+- cartopy
+- click
+- cython
+- flask
+- ipdb
+- ipykernel
+- ipywidgets
+- jupyter
+- matplotlib
+- notebook
+- numba
+- numpy
+- pandas
+- pip
+- python=3.6
+- requests
+- scikit-image
+- scikit-learn
+- scipy
+- seaborn
+- sympy
+- statsmodels
+- tensorflow
 - pip:
-  - aiohttp==0.21.2
-  - argh==0.26.1
-  - basemap==1.0.8
-  - chardet==2.3.0
-  - ipdb==0.8.1
-  - ipython-genutils==0.1.0
-  - ipython-memory-usage==1.0
-  - jupyter-client==4.1.1
-  - jupyter-console==4.1.0
-  - jupyter-core==4.0.6
-  - memory-profiler==0.41
-  - pathtools==0.1.2
-  - pyyaml==3.11
-  - sdeint==0.2.1.dev0
-  - sphinx==1.3.1
-  - toolz==0.7.4
-  - watchdog==0.8.3
-
+  - pygubu
+  - sdeint
