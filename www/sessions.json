@@ -107,6 +107,10 @@
 		"sessionname": "Machine learning with scikit-learn",
 		"filename": "scikit-learn.ipynb"
 	},
+		{
+		"sessionname": "Object detection with scikit-learn",
+		"filename": "object-detection.ipynb"
+	},
 	{
 		"sessionname": "Deep learning with TensorFlow",
 		"filename": "tensorflow.ipynb"
