@@ -92,8 +92,8 @@
 		"filename": "ctypes.ipynb"
 	},
 	{
-		"sessionname": "Cython",
-		"filename": "cython.ipynb"	
+		"sessionname": "High performance computing: Cython and Numba",
+		"filename": "cython-numba.ipynb"	
 	},
 	{
 		"sessionname": "Using MATLAB from Python",
