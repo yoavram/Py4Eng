@@ -104,33 +104,9 @@
 		"filename": "dotNET.ipynb"
 	},	
 	{
-		"sessionname": "Machine learning with scikit-learn",
-		"filename": "scikit-learn.ipynb"
-	},
-		{
-		"sessionname": "Object detection with scikit-learn",
-		"filename": "object-detection.ipynb"
-	},
-	{
-		"sessionname": "Deep learning with TensorFlow",
-		"filename": "tensorflow.ipynb"
-	},	
-	{
-		"sessionname": "Inference with TensorFlow and Inception",
-		"filename": "inception.ipynb"
-	},
-	{
-		"sessionname": "Statistics",
-		"filename": "statistics.ipynb"
-	},
-	{
 		"sessionname": "Regression and curve fitting",
 		"filename": "curve-fitting.ipynb"
-	},
-	{
-		"sessionname": "Stochastic processes and probability distributions",
-		"filename": "probability.ipynb"
-	},		
+	},	
 	{
 		"sessionname": "Matplotlib aesthetics",
 		"filename": "matplotlib-aesthetics.ipynb"
@@ -150,14 +126,6 @@
 	{
 		"sessionname": "Requests: HTTP for Humans",
 		"filename": "requests.ipynb"
-	},
-	{
-		"sessionname": "Graphical user interface",
-		"filename": "gui.ipynb"
-	},
-	{
-		"sessionname": "Web server",
-		"filename": "web-server.ipynb"
 	},
 	{
 		"sessionname": "Time & Date",
