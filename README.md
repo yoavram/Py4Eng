@@ -1,5 +1,5 @@
 # Py4Eng
-## A Python programming workshop for engineers.
+## Yoav Ram
 
 ## Setup instructions
 
