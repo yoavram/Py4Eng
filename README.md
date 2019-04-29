@@ -1,10 +1,10 @@
 # Py4Eng
-## A Python programming workshop for engineers.
+## Yoav Ram
 
 ## Setup instructions
 
 - Install [Anaconda with Python 3](http://anaconda.com/download/)
-- Download the workshop files from [GitHub](https://github.com/yoavram/Py4Eng) by clicking "Clone or download->Download ZIP" (you may `git clone` if you know how to).
+- [Download the workshop files](https://github.com/yoavram/Py4Eng/archive/master.zip) as a ZIP file.
 - Unzip the ZIP; make note of the unzipped folder location.
 - Start the *Anaconda Prompt* terminal application (or on Mac/Linux just open a Terminal).
 - Run Jupyter from *Anaconda Prompt* after changing folder to the workshop folder (note that `jupyter` is with a `y`):
