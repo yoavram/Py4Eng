@@ -1,28 +1,27 @@
 name: Py4Eng
 dependencies:
-- cartopy
-- click
-- cython
-- flask
-- ipdb
-- ipykernel
-- ipywidgets
-- jupyter
-- matplotlib
-- notebook
-- numba
-- numpy
-- pandas
-- pip
-- python=3.6
-- requests
-- scikit-image
-- scikit-learn
-- scipy
-- seaborn
-- sympy
-- statsmodels
-- tensorflow
-- pip:
-  - pygubu
-  - sdeint
+  - autograd=1.2
+  - cartopy=0.17.0
+  - click=7.0
+  - flask=1.0.2
+  - imageio=2.5.0
+  - ipykernel=5.1.0
+  - ipywidgets=7.4.2
+  - matplotlib=3.0.3
+  - notebook=5.7.8
+  - numba=0.41.0
+  - numpy=1.16.3
+  - pandas=0.24.2
+  - pip=19.1
+  - pymatbridge=0.5.2
+  - python=3.7.3
+  - requests=2.21.0
+  - scikit-image
+  - scikit-learn
+  - scipy=1.2.1
+  - seaborn=0.9.0
+  - statsmodels=0.9.0
+  - sympy=1.4
+  - pip:
+    - pygubu
+    - sdeint

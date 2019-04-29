@@ -1,31 +1,20 @@
 # Py4Eng
+## A Python programming workshop for engineers.
 
-A Python programming course for MATLAB® users.
+## Setup instructions
 
-I'm Yoav Ram I develop and give [Python training](http://python.yoavram.com) for engineers, scientists, and everyone else.
-
-This is the course website source code.
-
-[Contact me](mailto:yoav@yoavram.com) if you are interested in Python workshops anywhere in the world!
-
-# Setup an Environment
-
-Download Anaconda. The course uses Python 3.6 but will work with Python 3.4/3.5, too. 
-
-You can create a new environment:
-
+- Install [Anaconda with Python 3](http://anaconda.com/download/)
+- Download the workshop files from [GitHub](https://github.com/yoavram/Py4Eng) by clicking "Clone or download->Download ZIP" (you may `git clone` if you know how to).
+- Unzip the ZIP; make note of the unzipped folder location.
+- Start the *Anaconda Prompt* terminal application (or on Mac/Linux just open a Terminal).
+- Run Jupyter from *Anaconda Prompt* after changing folder to the workshop folder (note that `jupyter` is with a `y`):
 ```sh
-conda config --add channels conda-forge
-conda update conda pip
-conda env create -n Py4Eng -f environment.yml
+cd <unzipped workshop folder>
+jupyter lab
 ```
+- In the new browser window that just opened, choose [`index.ipynb`](index.ipynb).
 
-# Start an interactive session
+## Contact
 
-Open a terminal window (`cmd.exe` in Windows), find the folder in which you put the course material.
-If you created a dedicated conda environment, activate it with `activate Py4Eng` (prepend with `source` if on Mac/Linux).
-Then start the notebook server with `jupyter notebook`. The sessions will be inside the `sessions` folder.
+[Contact me](mailto:yoav@yoavram.com) if you are interested in Python workshops anywhere in the world.
 
-# License
-
-`LICENSE.md` for everything unless otherwise mentioned.
