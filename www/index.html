@@ -10,37 +10,6 @@
 </head>
 
 <body>
-  <div class="row">
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Py4Eng</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav" role="tablist">
-            <li role="presentation" class="active">
-              <a href="#admin" aria-controls="admin" role="tab" data-toggle="tab">Admin</a>
-            </li>
-            <li role="presentation">
-              <a href="#sessions" aria-controls="sessions" role="tab" data-toggle="tab">Sessions</a>
-            </li>
-            <li role="presentation">
-              <a href="#exercises" aria-controls="exercises" role="tab" data-toggle="tab">Exercises</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
   <!-- <div class="row">
     <div class="col-md-8 col-md-offset-2">
       <div class="alert alert-success" role="alert">
@@ -350,12 +319,8 @@
         Course materials and website licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> |
         <a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> | 
         <a href="http://bootswatch.com/yeti/" target="_blank">Bootswatch Yeti theme</a> licensed under <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache v2.0</a>.
-<!--         </br>
-        <a class="hidden-xs" rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
-          <img alt="Creative Commons License" class="license" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
-        </a> -->
       </p>
-      <p class="copyright text-muted small">Copyright &copy; Yoav Ram 2018. All Rights Reserved.</p>
+      <p class="copyright text-muted small">Copyright &copy; Yoav Ram 2016-2019. All Rights Reserved.</p>
     </footer>
   </div>
 </div>
@@ -363,72 +328,5 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <!-- Bootstrap.js -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-<!-- Moment.js -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
-<!-- Mustache.js -->
-<script src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
-
-<!-- Build sessions table -->
-<script>
-$(function() {
-  $.getJSON('sessions.json', function(sessionsData) {      
-    var data = {
-      sessions: sessionsData, 
-      index: function() {
-        return 1 + (++window['INDEX']||(window['INDEX']=0));
-      }
-    } 
-    // render template using the data variable
-    var template = $('#sessions-template').html();
-    Mustache.parse(template);
-    var rendered = Mustache.render(template, data);
-    $('#sessions').html(rendered);
-    
-    // add 'last updated' for each session file
-    $('.lastUpdated').each(function(index, el) {
-     var path = el.id;
-     $.getJSON("https://api.github.com/repos/yoavram/Py4Eng/commits?per_page=1&path=sessions/" + path, function(data) {
-       var date = data[0].commit.author.date;
-       var author = data[0].commit.author.name;
-       date = moment(date, "YYYY-MM-DDTHH:mm:SSZ").fromNow();
-       var message = data[0].commit.message;
-       el.innerHTML = date;
-       el.setAttribute('title', author + ": " + message);
-     });
-    });
-  }).fail(function( jqXHR, textStatus ) {
-    //alert( "Request failed: " + textStatus );
-    $('#sessions').html("Error loading sessions data");
-  });
-});
-</script>
-<!-- download-sessions -->
-
-<!-- download-exercises -->
-<script>
-$(function() {
-  $.getJSON('exercises.json', function(exercisesData) {
-    var data = {
-      exercises: exercisesData
-    }
-
-    // render template using the data variable
-    var template = $('#exercises-template').html();
-    Mustache.parse(template);
-    var rendered = Mustache.render(template, data);
-    $('#exercises').html(rendered);
-
-  }).fail(function( jqXHR, textStatus ) {
-    //alert( "Request failed: " + textStatus );
-    $('#exercises').html("Error loading exercises data");
-  });
-});
-</script>
-<!-- build exercises list -->
-
-<script src="js/FileSaver.min.js"></script>
-<script src="js/jszip.min.js"></script>
-<script src="js/API.js"></script>
-
 </body>
 </html>
