@@ -25,3 +25,4 @@ dependencies:
   - pip:
     - pygubu
     - sdeint
+    - ipython_memory_usage
