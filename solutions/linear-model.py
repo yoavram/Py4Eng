@@ -12,7 +12,7 @@ fname = '../data/anage_data.txt'
 max_mass = 3e5
 
 if __name__ == '__main__':
-	df = pd.read_csv(fname, dep='\t')
+	df = pd.read_table(fname)
 	df = df[df['Body mass (g)'] < max_mass]
 	df['Body mass ^ 3/4'] = df['Body mass (g)'] ** (3/4)
 	print('scatterplot...')
