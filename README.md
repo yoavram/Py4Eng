@@ -12,7 +12,7 @@ Download and install [Anaconda with Python 3](http://anaconda.com/products/indiv
 
 # Start an interactive session
 
-- Open an "Anaconda Promprt" window (from the Start menu in Windows)
+- Open an "Anaconda Prompt" window (from the Start menu in Windows)
 - Find the folder in which you unzipped the course material.
 - Start Jupyter notebook server with `jupyter lab`.
 - Open the `index.ipynb` file.
