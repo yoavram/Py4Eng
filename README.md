@@ -3,7 +3,7 @@
 
 ## Setup instructions
 
-- Install Python with [Miniforge]([http://anaconda.com/download/](https://conda-forge.org/download/).
+- Install Python with [Miniforge](https://conda-forge.org/download/).
 - [Download the workshop files](https://github.com/yoavram/Py4Eng/archive/refs/heads/HPCPy.zip) as a ZIP file.
 - Unzip the ZIP; make note of the unzipped folder location.
 - Run Jupyter Lab from a terminal window after changing folder to the workshop folder (note that `jupyter` is with a `y`):
